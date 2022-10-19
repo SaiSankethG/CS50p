@@ -1,0 +1,1 @@
+x=int(input("whats is x?"))
