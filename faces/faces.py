@@ -3,7 +3,7 @@
 # emoji={
 
 # }
-def main()
+def main():
   msg=input()
   result=convert(msg)
   print(result)
