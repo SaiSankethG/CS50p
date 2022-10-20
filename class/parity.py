@@ -12,6 +12,10 @@ def main():
     else:
         print("odd")
 
-def is_even(y)
-    if y%2==0
-     
+def is_even(y):
+    if y%2==0:
+     return True
+    else :
+     return false
+
+main()
