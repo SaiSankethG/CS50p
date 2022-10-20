@@ -1,1 +1,1 @@
-score=int
+score=int(input("Score:"))
