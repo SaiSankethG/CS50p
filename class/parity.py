@@ -13,6 +13,6 @@ def main():
         print("odd")
 
 def is_even(y):
-    return True if n%2==0 else False
+    return y%2==0
 
 main()
