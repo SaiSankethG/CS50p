@@ -1,10 +1,10 @@
-uni=input("What is the Answer to the Great question of life, the Universe and Everything?").lower()
+uni=input("What is the Answer to the Great question of life, the Universe and Everything?")
 
 if uni=="42":
     print("Yes")
-elif uni=="forty-two":
+elif uni.lower() == "forty-two":
     print("Yes")
-elif uni=="forty two":
+elif uni.lower() == "forty two":
     print("Yes")
 else:
-       print("No")
+    print("No")
