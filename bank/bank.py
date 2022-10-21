@@ -1,4 +1,4 @@
-amount=input()
+amount=input("Greeting:")
 dollar=amount.lower()
 
 if dollar.split()[0]=="hello":
