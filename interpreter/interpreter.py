@@ -4,5 +4,10 @@ y1=float(y)
 
 match y:
     case '+':
-        print()
-
+        print(a+b)
+    case '-':
+        print(a-b)
+    case '*':
+        print(a*b)
+    case '/':
+        print(a/b)
