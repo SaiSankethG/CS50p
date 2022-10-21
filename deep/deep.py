@@ -7,4 +7,4 @@ elif uni=="forty-two":
 elif uni=="forty two":
     print("Yes")
 else:
-    print("No")
+       print("No")
