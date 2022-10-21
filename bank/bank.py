@@ -1,0 +1,3 @@
+amount=input()
+
+if amount==""
