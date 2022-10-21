@@ -1,3 +1,3 @@
 amount=input()
 
-if amount==""
+if amount..lower()=="hello"
