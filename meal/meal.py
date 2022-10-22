@@ -1,5 +1,5 @@
 def main():
-    
+    time=input
 
 
 def convert(time):
