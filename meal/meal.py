@@ -1,16 +1,15 @@
- def main():
-    time=input("Whats the time?")
-    hours , minutes=convert(time)
-    if hours>=7 and hours+minutes<=8:
+def main():
+ time=input("Whats the time?")
+ hours , minutes=convert(time)
+     if hours>=7 and hours+minutes<=8:
        print("Breakfast time")
-    elif hours>=12 and hours+minutes<=13:
+     elif hours>=12 and hours+minutes<=13:
        print("Breakfast time")
-    elif hours>=7  and hours+minutes<=8:
+     elif hours>=7  and hours+minutes<=8:
        print("Breakfast time")
-
 
 
 def convert(time):
-    return hours , minutes =time.split(":")
+ return hours , minutes =time.split(":")
 
 main()
