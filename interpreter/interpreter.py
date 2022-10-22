@@ -1,6 +1,6 @@
 x  , y, z=input("Expression:").split()
-x1= float(x)
-z1=float(z)
+a= float(x)
+b=float(z)
 
 # match y:
 #     case '+':
@@ -11,5 +11,15 @@ z1=float(z)
 #         print(a*b)
 #     case '/':
 #         print(a/b)
-if y=='+'
-   print(a+b)
+if y=='+':
+   c=a+b
+   print("{c:.1f}")
+elif y=='-':
+   c=a-b
+   print("{c:.1f}")
+elif y=='*':
+   c=a*b
+   print("{c:.1f}")
+elif y=='/':
+   c=a/b
+   print("{c:.1f}")
