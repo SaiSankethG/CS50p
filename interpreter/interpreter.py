@@ -13,7 +13,7 @@ b=float(z)
 #         print(a/b)
 if y=='+':
    c=a+b
-   print("{c:.1f}")
+   print(c)
 elif y=='-':
    c=a-b
    print("{c:.1f}")
