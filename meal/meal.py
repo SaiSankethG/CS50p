@@ -1,6 +1,6 @@
 def main():
   time=input("Whats the time?")
-  hours , minutes=convert(time)
+  hours , minutes =time.split(":")
   minute=minutes/60
   if hours>=7 and hours+minute<=8:
     print("breakfast time")
@@ -9,8 +9,5 @@ def main():
   elif hours>=18 and hours+minute<=19:
     print("dinner time")
 
-
- def convert(time):
- return hours ,  minutes=time.split(":")
 
 main()
