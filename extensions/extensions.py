@@ -9,12 +9,12 @@ elif '.jpg' in new_name:
 elif '.jpeg' in new_name:
     print("image/jpeg")
 
-if '.pdf' in new_name:
+elif '.pdf' in new_name:
     print("application/type")
 elif '.zip' in new_name:
     print("application/type")
 
-if '.txt' in new_name:
+elif '.txt' in new_name:
     print("text/plain")
 else:
     print("application/octet-stream")
