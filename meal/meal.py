@@ -1,5 +1,5 @@
 def main():
-  time=input("Whats the time?")
+  time=input("What time is it? ")
   hours , minutes =time.split(":")
   minute=float(minutes)/60
   hour=float(hours)
