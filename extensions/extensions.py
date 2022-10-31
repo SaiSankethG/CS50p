@@ -8,12 +8,10 @@ elif '.jpg' in new_name:
     print("image/jpedg")
 elif '.jpeg' in new_name:
     print("image/jpeg")
-
 elif '.pdf' in new_name:
     print("application/type")
 elif '.zip' in new_name:
     print("application/type")
-
 elif '.txt' in new_name:
     print("text/plain")
 else:
