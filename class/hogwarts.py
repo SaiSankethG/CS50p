@@ -1,3 +1,6 @@
-students=["heromine" , "harry" , "ron" ,"draco"]
-
-houses=["Gryffindor" , "Gryffindor" , "Gryffindor" , "Slytherin"]
+students={
+    "Heromine":"Gryffindor",
+    "Harry":"Gryffindor" ,
+    "Ron":"Gryffindor" ,
+    "Draco":"Slytherin",
+}
