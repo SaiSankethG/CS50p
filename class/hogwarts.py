@@ -4,3 +4,7 @@ students={
     "Ron":"Gryffindor" ,
     "Draco":"Slytherin",
 }
+print(students["Heromine"])
+print(students["Harry"])
+print(students["Ron"])
+print(students["Draco"])
