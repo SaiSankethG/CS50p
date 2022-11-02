@@ -1,7 +1,3 @@
-students=["heromine" , "harry" , "ron"]
+students=["heromine" , "harry" , "ron" ,"draco"]
 
-for i in range(len(students)):
-    print(i+1 , students[i] , sep=".")
-
-# for student in students:
-#     print(student)
+houses=["Gryffindor" , "Gryffindor" , "Gryffindor" , "Slytherin"]
