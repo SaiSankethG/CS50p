@@ -1,7 +1,7 @@
 students=["heromine" , "harry" , "ron"]
 
 for i in range(len(students)):
-    print(students[i])
+    print(i+1 , students[i] , sep=".")
 
 # for student in students:
 #     print(student)
