@@ -7,10 +7,10 @@ def main():
         total_insert=insert_coin
         amount_due-=insert_coin
         print("Amount Due:" , amount_due)
-        if total_insert>50:
+    if total_insert>50:
             change_owed=total_insert-50
             print("Changed Owed: " , change_owed)
-        else:
+    else:
             print("Changed Owed: 0")
 
 main()
