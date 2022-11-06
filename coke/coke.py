@@ -4,11 +4,14 @@ def main():
     print("Amount Due:" , amount_due)
     while(amount_due>0 or amount_due<50):
         insert_coin=int(input("Insert Coin:"))
-        total_insert=insert_coin
-        amount_due-=insert_coin
-        print("Amount Due:" , amount_due)
-        if amount_due==0:
+        if insert_coin>0:
+            total_insert=insert_coin
+            amount_due-=insert_coin
+            print("Amount Due:" , amount_due)
+            if amount_due==0:
             break
+        else:
+            return
     if total_insert>50:
             change_owed=total_insert-50
             print("Changed Owed: " , change_owed)
