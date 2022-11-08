@@ -2,6 +2,6 @@ try:
    x=int(input("X:"))
 
 except ValueError:
-    print("It is not a integer")
+	print("It is not a integer")
 else:
-    print(f"x is {x}")
+	print(f"x is {x}")
