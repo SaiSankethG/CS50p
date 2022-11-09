@@ -1,5 +1,7 @@
 while True:
     try:
-        x, y =int(input("Fraction")).split("/")
+        x, y =int(input("Fraction:")).split("/")
+    except(ValueError , ZeroDivisionError):
+        continue
 
 
