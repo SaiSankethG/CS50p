@@ -17,10 +17,10 @@ while True:
         if order in dicts:
             total_amount+=dicts[order]
             print("Total: $" , end="")
-            print(total_amount)
+            print("{:.2f}".format(total_amount))
     except EOFError:
         print()
-        break 
+        break
 
 
 
