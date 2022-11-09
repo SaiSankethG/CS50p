@@ -5,11 +5,8 @@ def main():
 
 def get_int():
 	while True:
-		try:x=int(input("X:"))
-
+		try:return int(input("X:"))
 		except ValueError:
 				print("It is not a integer")
-			else:
-				break
-    return x
 
+main()
