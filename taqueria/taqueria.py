@@ -9,6 +9,7 @@ dicts={
     "Taco": 3.00,
     "Tortilla Salad": 8.00
 }
+total_amount=0
 
 while True:
     try:
@@ -16,6 +17,7 @@ while True:
         for dict in dicts:
             if order == dict:
                 print(f"${dicts[order]}")
+                totala_amount+=dicts[order]
     except EOFError:
         pass
 
