@@ -1,4 +1,4 @@
-lists={
+dicts={
     "Baja Taco": 4.00,
     "Burrito": 7.50,
     "Bowl": 8.50,
@@ -13,9 +13,9 @@ lists={
 while True:
     try:
         order=input("Item: ")
-        for list in lists:
-            if order in list:
-                print(")
+        for dict in dicts:
+            if order in dict:
+                print(f"")
     except EOFError:
         pass
 
