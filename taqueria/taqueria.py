@@ -17,7 +17,7 @@ while True:
         if order in dicts:
             total_amount+=dicts[order]
             print("Total: $" , end="")
-            print(f"{total_amount}")
+            print(f"{total_amount}"+0.00)
     except EOFError:
         print()
         break
