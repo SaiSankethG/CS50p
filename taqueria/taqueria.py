@@ -9,7 +9,11 @@ list={
     "Taco": 3.00,
     "Tortilla Salad": 8.00
 }
-order=input("Item: ")
+
 while True:
-    
+    try:
+        order=input("Item: ")
+    expect EOFError:
+        
+
 
