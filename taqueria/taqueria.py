@@ -13,11 +13,10 @@ total_amount=0
 
 while True:
     try:
-        order=input("Item: ").upper()
-        for dict in dicts:
-            if order == dict:
-                print(f"${dicts[order]}")
-                totala_amount+=dicts[order]
+        order=input("Item: ").title()
+        if order in dicts:
+            total_amount+=dicts[order]
+            print(f"${total_amount}")
     except EOFError:
         pass
 
