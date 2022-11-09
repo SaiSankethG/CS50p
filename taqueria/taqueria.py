@@ -12,9 +12,9 @@ dicts={
 
 while True:
     try:
-        order=input("Item: ")
+        order=input("Item: ").upper()
         for dict in dicts:
-            if order in dict:
+            if order == dict:
                 print(f"${dicts[order]}")
     except EOFError:
         pass
