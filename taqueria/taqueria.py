@@ -1,4 +1,4 @@
-list={
+lists={
     "Baja Taco": 4.00,
     "Burrito": 7.50,
     "Bowl": 8.50,
@@ -13,7 +13,11 @@ list={
 while True:
     try:
         order=input("Item: ")
-    expect EOFError:
-        
+        for list in lists:
+            if order in list:
+                print(")
+    except EOFError:
+        pass
+
 
 
