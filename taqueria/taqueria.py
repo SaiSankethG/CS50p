@@ -15,7 +15,7 @@ while True:
         order=input("Item: ")
         for dict in dicts:
             if order in dict:
-                print(f"")
+                print(f"${dicts[order]}")
     except EOFError:
         pass
 
