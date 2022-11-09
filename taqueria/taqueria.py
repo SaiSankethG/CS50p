@@ -16,7 +16,8 @@ while True:
         order=input("Item: ").title()
         if order in dicts:
             total_amount+=dicts[order]
-            print(f"${total_amount}")
+            print("Total: $" , end="")
+            print(f"{total_amount}")
     except EOFError:
         pass
 
