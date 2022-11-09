@@ -10,10 +10,10 @@ while True:
     except(ValueError , ZeroDivisionError):
         continue
 
-per=f*100
-if 0<per<1 :
+per=int(f*100)
+if per<=1 :
     print("E")
-elif 99=<per<=100:
+elif 99<=per:
     print("F")
 else:
     print(f"{per}%")
