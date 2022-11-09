@@ -1,8 +1,9 @@
 while True:
     fuel=input("Fraction: ")
     try:
-        
-        print(x , y)
+        num , den=fuel.split("/")
+        x=int(num)
+        y=int(den)
         f=x/y
         if f<=1:
             break
