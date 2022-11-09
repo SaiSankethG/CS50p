@@ -1,6 +1,7 @@
 while True:
     try:
         x, y =int(input("Fraction:")).split("/")
+        print(x , y)
         f=x/y
         if f<=1:
             break
