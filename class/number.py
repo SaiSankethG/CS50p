@@ -7,6 +7,6 @@ def get_int():
 	while True:
 		try:return int(input("X:"))
 		except ValueError:
-				print("It is not a integer")
+				continue
 
 main()
