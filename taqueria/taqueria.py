@@ -19,9 +19,7 @@ while True:
             print("Total: $" , end="")
             print(total_amount)
     except EOFError:
-        print()
-        break
-
+        continue
 
 
 
