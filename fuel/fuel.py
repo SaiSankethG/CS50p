@@ -13,7 +13,7 @@ while True:
 per=f*100
 if 0<per<1 :
     print("E")
-elif 99<per<=100:
+elif 99=<per<=100:
     print("F")
 else:
     print(f"{per}%")
