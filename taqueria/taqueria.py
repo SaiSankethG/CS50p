@@ -14,7 +14,9 @@ total_amount=0
 while True:
     try:
         order=input("Item: ").title()
+        print(order)
         if order in menu:
+            print(order)
             total_amount+=menu[order]
             print("Total: $" , end="")
             print(total_amount)
