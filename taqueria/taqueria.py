@@ -1,4 +1,5 @@
-menu={
+def main():
+    menu={
     "Baja Taco": 4.00,
     "Burrito": 7.50,
     "Bowl": 8.50,
@@ -8,19 +9,17 @@ menu={
     "Super Quesadilla": 9.50,
     "Taco": 3.00,
     "Tortilla Salad": 8.00
-}
-total_amount=0
+    }
+    total_amount=0
+    while True:
+        try:
+            item=input("Item: ").title()
+            if item in menu:
+                total_amount+=menu[item]
+                print("Total: $" , end="")
+                print("{.2f}".format(total_amount))
 
-while True:
-    try:
-        order= input ("Item: ").title()
-        item=amount(order)
-    except EOFError:
-        print()
-        break
-def amount(order):
-    if order in menu:
-        return
-
-
-
+        except EOFError:
+            print()
+            break
+main()
