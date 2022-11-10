@@ -12,7 +12,15 @@ menu={
 total_amount=0
 
 while True:
-    
+    try:
+        order=input("Item: ")
+        if order in menu:
+            total_amount+=menu[order]
+            print("Total: $" , end="")
+            print(total_amount)
+    except EOFError:
+        print()
+        break
 
 
 
