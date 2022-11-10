@@ -1,4 +1,4 @@
-dicts={
+menu={
     "Baja Taco": 4.00,
     "Burrito": 7.50,
     "Bowl": 8.50,
@@ -12,15 +12,7 @@ dicts={
 total_amount=0
 
 while True:
-    try:
-        order=input("Item: ").title()
-        if order in dicts:
-            total_amount+=dicts[order]
-            print("Total: $" , end="")
-            print("{:.2f}".format(total_amount))
-    except EOFError:
-        print()
-        break
+    
 
 
 
