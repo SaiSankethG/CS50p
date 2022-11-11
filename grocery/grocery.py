@@ -1,4 +1,5 @@
 grocery={}
 while True:
-    item=input().upper()
-    
+    try:
+        item=input().upper()
+        
