@@ -20,6 +20,14 @@ while True:
             break
     except:
         try:
-            
+            m1 , d1,  y1=date.split(" ")
+            for i in range(len(month)):
+                if m1==month:
+                    m2=i
+            d2=d1.replace("," , "")
+            if (1>=int(m2)<=12 and 1>=int(d2)<=31):
+                break
+        except EOFError:
+            print()
+            pass
 
-        pass
