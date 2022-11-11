@@ -13,3 +13,12 @@ def list():
     for i in dict:
         print(i[value] , i[name] , sep=" ")
 main()
+
+
+
+
+
+
+# calling for printing
+# making it alphabetical order
+# updating and printing the list
