@@ -1,4 +1,8 @@
 dict={}
 while True:
     try:
-        dict=i
+        dict=input()
+    except EOFError:
+        print()
+        break
+    
