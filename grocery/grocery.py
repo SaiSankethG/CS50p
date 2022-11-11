@@ -7,4 +7,5 @@ while True:
     except EOFError:
         print()
         break
-
+for i in dict:
+    
