@@ -14,11 +14,12 @@ month=[
 ]
 while True:
     try:
-        date=input("Date:")
+        date=input("Date:").title()
         m ,d , y=date.split(" ")
         if m in month:
             if d>31:
                 continue
             else:
                 print(f"{y}-{m}-{d}")
-    except
+    except EOFError:
+        pass
