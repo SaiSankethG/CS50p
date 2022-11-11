@@ -7,4 +7,5 @@ while True:
         print()
         break
 
-for i in range()
+for i in dict:
+    
