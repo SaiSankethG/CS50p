@@ -21,5 +21,7 @@ while True:
                 continue
             else:
                 print(f"{y}-{m}-{d}")
-    except EOFError:
+    except (EOFError , ValueError):
         pass
+    else:
+        print("Not valid")
