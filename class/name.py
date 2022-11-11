@@ -1,3 +1,8 @@
 from sys import argv
 
-print("Hello , my name is" , argv[1])
+if len(argv)<2:
+    print("Too few arguments")
+elif len(argv)>2:
+    print("Too many arguments")
+else:
+    print("Hello , my name is" , argv[1])
