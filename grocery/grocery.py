@@ -8,4 +8,5 @@ while True:
         print()
         break
 for i in dict:
-    
+    if dict[name]
+
