@@ -1,8 +1,10 @@
 dict={}
 while True:
     try:
-        dict=input()
+        name=input()
+        dict[value]=name
     except EOFError:
         print()
         break
-    
+
+for i in range()
