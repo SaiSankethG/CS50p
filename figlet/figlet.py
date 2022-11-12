@@ -2,7 +2,6 @@ import sys
 from pyfiglet import Figlet
 import random
 
-figlet = Figlet()
 if len(sys.argv)==1:
     user_input=print("Input:")
     rand=figlet.getFonts()
