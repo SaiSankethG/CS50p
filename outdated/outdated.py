@@ -20,7 +20,7 @@ while True:
             break
     except:
         try:
-            m1 , d1,  y=date.split(" ")
+            m1,d1,y=date.split(" ")
             for i in range(len(month)):
                 if m1==month:
                     m=i
