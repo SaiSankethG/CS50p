@@ -21,12 +21,12 @@ while True:
             break
     except:
         try:
-            o_month,o_date,year=date.split(" ")
+            o_month,o_day,year=date.split(" ")
             for i in range(len(month)):
-                if o_month==months:
+                if o_month==ynths:
                     month=i
-            date=o_date.replace("," , "")
-            if (1<=int(month)<=12 and 1<=int(date)<=31):
+            day=o_day.replace("," , "")
+            if (1<=int(month)<=12 and 1<=int(day)<=31):
                 break
         except EOFError:
             print()
