@@ -18,7 +18,11 @@ if random==False:
         print("Invalid message")
         sys.exit()
 else:
-    font=random.choice(figlet.getFonts())
+    try:
+        font=random.choice(figlet.getFonts())
+    except AttributeError:
+        print("No such attribute")
+
 
 msg=input("Input:")
 print("Output:")
