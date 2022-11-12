@@ -1,4 +1,4 @@
-months=[
+months = [
     "January",
     "February",
     "March",
@@ -10,23 +10,23 @@ months=[
     "September",
     "October",
     "November",
-    "December"
+    "December",
 ]
 while True:
-    date=input("Date:").title()
+    date = input("Date:").title()
     try:
-        month , day , o_year=date.split("/")
-        year=o_year.replace(" " , "")
-        if (1<=int(month)<=12 and 1<=int(day)<=31):
+        month, day, o_year = date.split("/")
+        year = o_year.replace(" ", "")
+        if 1 <= int(month) <= 12 and 1 <= int(day) <= 31:
             break
     except:
         try:
-            o_month,o_day,year=date.split(" ")
+            o_month, o_day, year = date.split(" ")
             for i in range(len(months)):
-                if o_month==months:
-                    month=i
-            day=o_day.replace("," , "")
-            if (1<=int(month)<=12 and 1<=int(day)<=31):
+                if o_month == months:
+                    month = i
+            day = o_day.replace(",", "")
+            if 1 <= int(month) <= 12 and 1 <= int(day) <= 31:
                 break
         except EOFError:
             print()
