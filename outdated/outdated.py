@@ -26,7 +26,7 @@ while True:
                 if m1==month:
                     m=i
             d=d1.replace("," , "")
-            if (1>=int(m)<=12 and 1>=int(d)<=31):
+            if (1<=int(m)<=12 and 1<=int(d)<=31):
                 break
         except EOFError:
             print()
