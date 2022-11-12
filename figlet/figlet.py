@@ -15,17 +15,14 @@ figlet.getFonts()
 if random==False:
     try:
         figlet.setFont(f=sys.argv[2])
-        print("Output:")
-        print(figlet.renderText(msg))
     except:
         print("Invalid message")
         sys.exit()
 else:
     font=random.choice(figlet.getFonts())
-    figlet.setFont(font)
-    print("Output:")
-    print(figlet.renderText(msg))
 
+print("Output:")
+print(figlet.renderText(msg))
 
 
 
