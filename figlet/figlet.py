@@ -21,7 +21,7 @@ else:
     try:
         font=random.choice(figlet.getFonts())
     except AttributeError:
-        print("No such attribute")
+        pass 
 
 
 msg=input("Input:")
