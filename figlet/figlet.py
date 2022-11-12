@@ -1,5 +1,6 @@
 import sys
 from pyfiglet import Figlet
+import random
 
 figlet=Figlet()
 if len(sys.argv)==1:
@@ -15,7 +16,12 @@ if random==False:
     try:
         figlet.setFont(f=sys.argv[2])
         print(figlet.renderText(msg))
-    except :
+    except:
+        print("Invalid message")
+        sys.exit()
+else:
+    
+
 
 
 
