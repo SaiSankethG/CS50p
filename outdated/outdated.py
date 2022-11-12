@@ -1,4 +1,4 @@
-month=[
+months=[
     "January",
     "February",
     "March",
@@ -21,12 +21,12 @@ while True:
             break
     except:
         try:
-            month,d1,y=date.split(" ")
+            o_month,o_date,year=date.split(" ")
             for i in range(len(month)):
-                if m1==month:
-                    m=i
-            d=d1.replace("," , "")
-            if (1<=int(m)<=12 and 1<=int(d)<=31):
+                if o_month==months:
+                    month=i
+            date=o_date.replace("," , "")
+            if (1<=int(month)<=12 and 1<=int(date)<=31):
                 break
         except EOFError:
             print()
