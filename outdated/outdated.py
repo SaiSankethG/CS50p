@@ -22,8 +22,8 @@ while True:
     except:
         try:
             o_month,o_day,year=date.split(" ")
-            for i in range(len(month)):
-                if o_month==ynths:
+            for i in range(len(months)):
+                if o_month==months:
                     month=i
             day=o_day.replace("," , "")
             if (1<=int(month)<=12 and 1<=int(day)<=31):
