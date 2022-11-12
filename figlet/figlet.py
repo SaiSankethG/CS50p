@@ -12,8 +12,11 @@ else:
 msg=input("Input:")
 figlet.getFonts()
 if random==False:
-    figlet.setFont(f=sys.argv[2])
-    print(figlet.renderText(msg))
+    try:
+        figlet.setFont(f=sys.argv[2])
+        print(figlet.renderText(msg))
+    except :
+
 
 
 
