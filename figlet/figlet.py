@@ -11,4 +11,5 @@ if sys.argv==0:
 elif sys.argv==2:
     font_style=sys.argv[1]
     if font_style[0:1]==-f or font_style[0:1]=--:
+        
 
