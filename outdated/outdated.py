@@ -15,8 +15,9 @@ month=[
 while True:
     date=input("Date:").title()
     try:
-        m,d,y=date.split("/")
-        if (1>=int(m)<=12 and 1>=int(d)<=31):
+        m,d,y1=date.split("/")
+        y=y1.replace(" " , "")
+        if (1<=int(m)<=12 and 1<=int(d)<=31):
             break
     except:
         try:
