@@ -10,7 +10,6 @@ elif len(sys.argv)==3:
 else:
     sys.exit()
 
-msg=input("Input:")
 figlet.getFonts()
 if random==False:
     try:
@@ -21,6 +20,7 @@ if random==False:
 else:
     font=random.choice(figlet.getFonts())
 
+msg=input("Input:")
 print("Output:")
 print(figlet.renderText(msg))
 
