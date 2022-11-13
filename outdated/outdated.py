@@ -13,23 +13,11 @@ months = [
     "December",
 ]
 while True:
-    date = input("Date:").title()
-    try:
-        month, day, o_year = date.split("/")
-        year = o_year.replace(" ", "")
-        if 1 <= int(month) <= 12 and 1 <= int(day) <= 31:
-            break
-    except:
-        try:
-            o_month, o_day, year = date.split(" ")
-            for i in range(len(months)):
-                if o_month == months:
-                    month = i
-            day = o_day.replace(",", "")
-            if 1 <= int(month) <= 12 and 1 <= int(day) <= 31:
-                break
-        except EOFError:
-            print()
-            pass
+    date=input("date:")
+    if "/" in date:
+        month , day ,year=date.split("/")
+    elif "," in date:
+        date=date.replace("," , "")
+        month, day, year=date.split(" ")
 
-print(f"{year}-{int(month):02}-{int(day):02}")
+print(f"")
