@@ -16,7 +16,7 @@ while True:
         if item in dict:
             total_amount+=dict[item]
             print("Total: $" ,end="")
-            print(total_amount)
+            print(f"{total_amount:.2f}")
     except (EOFError , ValueError):
         print()
         break
