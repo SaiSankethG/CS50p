@@ -16,10 +16,13 @@ months=[
 while True:
     date=input("Date: ")
     if "/" in date:
-        month , day, year=date.split("/")
-        if 1<=int(month)<=12 and 1<=int(day)<=31:
-            break
-        else:
+        try:
+            month , day, year=date.split("/")
+            if 1<=int(month)<=12 and 1<=int(day)<=31:
+                break
+            else:
+                pass
+        except ValueError:
             pass
     elif "," in date:
         month , o_day, year=date.split(" ")
