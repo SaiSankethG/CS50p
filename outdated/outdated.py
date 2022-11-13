@@ -15,10 +15,10 @@ months = [
 while True:
     date=input("date:")
     if "/" in date:
+        month , day ,year=date.split("/")
         if int(month)>12 and int(day)>31:
-            pass
+            print("Month" , month)
         else:
-            month , day ,year=date.split("/")
             break
     elif "," in date:
         date=date.replace("," , "")
@@ -26,6 +26,7 @@ while True:
         if month in months:
             month=months.index(month)+1
             if int(month)>12 and int(day)>31:
+                print("Month" , month)
                 pass
             else:
                 break
