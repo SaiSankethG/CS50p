@@ -16,7 +16,7 @@ while True:
     date=input("date:")
     if "/" in date:
         if int(month)>12 and int(day)>31:
-            continue
+            pass
         else:
             month , day ,year=date.split("/")
             break
@@ -26,7 +26,7 @@ while True:
         if month in months:
             month=months.index(month)+1
             if int(month)>12 and int(day)>31:
-                continue
+                pass
             else:
                 break
 
