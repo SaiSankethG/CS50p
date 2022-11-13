@@ -13,11 +13,11 @@ total_amount=0
 while True:
     try:
         item=input("Item:")
-        if item in dict:
-            print("Hi")
-            total_amount+=dict[item]
-            print("Total: $")
-            print(total_amount)
+        for i in dict:
+            if item==i:
+                total_amount+=dict[item]
+                print("Total: $")
+                print(total_amount)
     except (EOFError , ValueError):
         print()
         break
