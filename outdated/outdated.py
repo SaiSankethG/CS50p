@@ -23,4 +23,8 @@ while True:
         if month in months:
             month=months.index(month)+1
             break
+    if int(month)>12 and int(day)>31:
+            continue
+    else:
+        break
 print(f"{int(year)}-{int(month):02}-{int(day):02}")
