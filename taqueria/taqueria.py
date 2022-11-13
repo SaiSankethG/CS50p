@@ -12,7 +12,7 @@ dict={
 total_amount=0
 while True:
     try:
-        item=input("Item:")
+        item=input("Item: ").title()
         if item in dict:
             total_amount+=dict[item]
             print("Total: $" ,end="")
