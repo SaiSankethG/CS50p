@@ -22,7 +22,7 @@ while True:
         else:
             pass
     elif "," in date:
-        month , o_day, year=date.split(",")
+        month , o_day, year=date.split(" ")
         day=o_day.replace("," , "")
         if month in months:
             month=months.index(month)+1
@@ -31,4 +31,4 @@ while True:
             else:
                 pass
 
-print(f"{int(year)}-{int(month):02}-{int(month):02}")
+print(f"{int(year)}-{int(month):02}-{int(day):02}")
