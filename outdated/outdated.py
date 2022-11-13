@@ -24,4 +24,11 @@ while True:
     elif "," in date:
         month , o_day, year=date.split(",")
         day=o_day.replace("," , "")
-        
+        if month in months:
+            month=months.index(month)+1
+            if 1<=int(month)<=12 and 1<=int(day)<=31:
+                pass
+            else:
+                break
+
+print(f"{year}-{int(month):02}-{int(month):02}")
