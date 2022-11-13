@@ -1,4 +1,4 @@
-months = [
+months=[
     "January",
     "February",
     "March",
@@ -10,23 +10,12 @@ months = [
     "September",
     "October",
     "November",
-    "December",
+    "December"
 ]
+
 while True:
-    date=input("date:")
+    date=input("Date: ")
     if "/" in date:
-        month , day ,year=date.split("/")
-        break
-    elif "," in date:
-        date=date.replace("," , "")
-        month, day, year=date.split(" ")
-        if month in months:
-            month=months.index(month)+1
-            break
-    else:
-        continue
-    if int(month)>12 and int(day)>31:
-        continue
-    else:
-        break
-print(f"{int(year)}-{int(month):02}-{int(day):02}")
+        month , day, year=date.split("/")
+        if 1<=int(month)<=12 and 1<=int(day)<=31:
+            
