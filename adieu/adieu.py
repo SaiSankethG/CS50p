@@ -8,3 +8,5 @@ while True:
         break
 l=len(name)
 print("Length:" , l)
+for i in name:
+    print("name:" , name)
