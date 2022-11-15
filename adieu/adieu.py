@@ -6,3 +6,5 @@ while True:
     except:
         print()
         break
+l=len(name)
+print("Length:" , l)
