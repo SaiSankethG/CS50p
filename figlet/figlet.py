@@ -14,23 +14,20 @@ figlet.getFonts()
 if random==False:
     try:
         figlet.setFont(f=sys.argv[2])
-        msg=input("Input:")
-        print("Output:")
-        print(figlet.renderText(msg))
     except:
         print("Invalid message")
         sys.exit()
 else:
     try:
         font=random.choice(figlet.getFonts())
-        msg=input("Input:")
         figlet.setFont(font)
-        print("Output:")
-        print(figlet.renderText(msg))
     except AttributeError:
         pass
 
 
+msg=input("Input:")
+print("Output:")
+print(figlet.renderText(msg))
 
 
 
