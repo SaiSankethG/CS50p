@@ -36,6 +36,7 @@ def generate_integer(level):
         if  m==3:
             value=x+y
             print(f"{x} + {y}: {value}")
+        n+=1
     print(f"Score: {score}")
 
 
