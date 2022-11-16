@@ -21,7 +21,7 @@ def generate_integer(level):
     score=0
     n=1
     m=0
-    while n!=10:
+    while n!=11:
         x=random.choice(range(0,9))
         y=random.choice(range(0,9))
         true_answer=x+y
