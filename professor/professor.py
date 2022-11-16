@@ -34,7 +34,7 @@ def generate_integer(level):
             else:
                 score+=1
         if  m==3:
-            
+            value=
 
 
 if __name__ == "__main__":
