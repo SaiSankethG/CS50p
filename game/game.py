@@ -7,9 +7,9 @@ while True:
             break
     except (ValueError ,IndexError):
         pass
-num=random.choice(range(0,))
+num=random.choice(range(0,3000))
 while True:
-    number=input("Guess:")
+    number=int(input("Guess:"))
     try:
         if(number<num):
             print("Too small!")
@@ -19,5 +19,5 @@ while True:
             continue
         elif number==num:
             print("Just right!")
-    except():
+    except(ValueError):
         pass
