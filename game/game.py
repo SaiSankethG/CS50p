@@ -7,5 +7,5 @@ while True:
             break
     except ValueError:
         pass
-num=random.choice()
-while
+num=random.choice(range(0,))
+while 
