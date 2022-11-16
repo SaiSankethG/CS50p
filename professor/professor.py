@@ -2,17 +2,17 @@ import random
 
 
 def main():
-    get_level()
+    level=get_level()
+    genrat
 
 
 
 def get_level():
-    print("Level: ")
-    
-
-
+    try:
+        return input("Level: ")
 
 def generate_integer(level):
+    print()
 
 
 
