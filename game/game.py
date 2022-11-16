@@ -1,4 +1,4 @@
-import 
+import random:
 
 while True:
     level=input("Level: ")
@@ -7,3 +7,5 @@ while True:
             break
     except ValueError:
         pass
+num=random.choice()
+while
