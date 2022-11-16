@@ -40,23 +40,41 @@ def generate_integer(level):
         print(f"Score: {score}")
     elif level==2:
         while n!=11:
-        x=random.choice(range(10,99))
-        y=random.choice(range(10,99))
-        true_answer=x+y
-        for _ in range(3):
-            user_answer=int(input(f"{x} + {y} ="))
-            if user_answer!=true_answer:
-                print("EEE")
-                m+=1
-            else:
-                score+=1
-                break
-        if  m==3:
-            value=x+y
-            print(f"{x} + {y} = {value}")
-        n+=1
-    print(f"Score: {score}")
-    
+            x=random.choice(range(10,99))
+            y=random.choice(range(10,99))
+            true_answer=x+y
+            for _ in range(3):
+                user_answer=int(input(f"{x} + {y} ="))
+                if user_answer!=true_answer:
+                    print("EEE")
+                    m+=1
+                else:
+                    score+=1
+                    break
+            if  m==3:
+                value=x+y
+                print(f"{x} + {y} = {value}")
+            n+=1
+        print(f"Score: {score}")
+    elif level==3:
+        while n!=11:
+            x=random.choice(range(100,999))
+            y=random.choice(range(100,999))
+            true_answer=x+y
+            for _ in range(3):
+                user_answer=int(input(f"{x} + {y} ="))
+                if user_answer!=true_answer:
+                    print("EEE")
+                    m+=1
+                else:
+                    score+=1
+                    break
+            if  m==3:
+                value=x+y
+                print(f"{x} + {y} = {value}")
+            n+=1
+        print(f"Score: {score}")
+
 
 
 
