@@ -18,6 +18,7 @@ def get_level():
             pass
 
 def generate_integer(level):
+    score=0
     
 
 
