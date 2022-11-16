@@ -1,8 +1,9 @@
-name=[]
+names=[]
 
 while True:
     try:
         name=input("Name: ")
+        names.append(name)
     except:
         print()
         break
