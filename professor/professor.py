@@ -20,6 +20,7 @@ def get_level():
 def generate_integer(level):
     score=0
     n=1
+    m=0
     while n!=10:
         x=random.choice(range(0,9))
         y=random.choice(range(0,9))
@@ -29,8 +30,11 @@ def generate_integer(level):
             if user_answer!=true_answer:
                 print("EEE")
                 user_answer=input(f"{x} + {y}:")
+                m+=1
             else:
                 score+=1
+        if  m==3:
+            
 
 
 if __name__ == "__main__":
