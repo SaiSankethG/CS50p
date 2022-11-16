@@ -33,10 +33,11 @@ def generate_integer(level):
                 m+=1
             else:
                 score+=1
+                break
         if  m==3:
             value=x+y
             print(f"{x} + {y}: {value}")
-        
+
 
 
 if __name__ == "__main__":
