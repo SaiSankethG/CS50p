@@ -4,9 +4,7 @@ import random
 def main():
     level=get_level()
     print(level)
-
-
-
+    generate_integer(level)
 
 def get_level():
     while True:
@@ -20,7 +18,7 @@ def get_level():
             pass
 
 def generate_integer(level):
-    print()
+    
 
 
 if __name__ == "__main__":
