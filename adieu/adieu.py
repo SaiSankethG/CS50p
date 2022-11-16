@@ -11,4 +11,4 @@ while True:
         break
 
 output=p.join(names)
-print(f"Adieu , adieu ,to {output}")
+print(f"Adieu, adieu, to {output}")
