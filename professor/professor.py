@@ -24,10 +24,13 @@ def generate_integer(level):
         x=random.choice(range(0,9))
         y=random.choice(range(0,9))
         true_answer=x+y
-        user_answer=input(f"{x}+{y}:")
+        user_answer=input(f"{x} + {y}:")
         for _ in range(3):
-            
-
+            if user_answer!=true_answer:
+                print("EEE")
+                user_answer=input(f"{x} + {y}:")
+            else:
+                score+=1
 
 
 if __name__ == "__main__":
