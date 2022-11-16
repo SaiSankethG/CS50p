@@ -19,7 +19,12 @@ def get_level():
 
 def generate_integer(level):
     score=0
-    
+    n=1
+    while n!=10:
+        x=random.choice(range(0,9))
+        y=random.choice(range(0,9))
+        
+
 
 
 if __name__ == "__main__":
