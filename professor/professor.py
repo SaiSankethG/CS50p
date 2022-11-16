@@ -76,7 +76,5 @@ def generate_integer(level):
         print(f"Score: {score}")
 
 
-
-
 if __name__ == "__main__":
     main()
