@@ -3,12 +3,14 @@ import random
 
 def main():
     level=get_level()
-    
+
 
 
 
 def get_level():
-    return int(input("Level: "))
+    while True:
+        try:
+            
 
 def generate_integer(level):
     print()
