@@ -34,7 +34,9 @@ def generate_integer(level):
             else:
                 score+=1
         if  m==3:
-            value=
+            value=x+y
+            print(f"{x} + {y}: {value}")
+        
 
 
 if __name__ == "__main__":
