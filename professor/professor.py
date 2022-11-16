@@ -25,11 +25,10 @@ def generate_integer(level):
         x=random.choice(range(0,9))
         y=random.choice(range(0,9))
         true_answer=x+y
-        user_answer=input(f"{x} + {y}:")
         for _ in range(3):
+            user_answer=int(input(f"{x} + {y}:"))
             if user_answer!=true_answer:
                 print("EEE")
-                user_answer=input(f"{x} + {y}:")
                 m+=1
             else:
                 score+=1
@@ -37,6 +36,7 @@ def generate_integer(level):
         if  m==3:
             value=x+y
             print(f"{x} + {y}: {value}")
+    print(f"Score: {score}")
 
 
 
