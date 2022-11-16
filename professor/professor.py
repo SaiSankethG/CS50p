@@ -2,13 +2,13 @@ import random
 
 
 def main():
-    level=get_level()
-    print(level)
+    get_level()
 
 
 
 def get_level():
-    return level=random.choice(range(1,3))
+    print("Level: ")
+    
 
 
 
