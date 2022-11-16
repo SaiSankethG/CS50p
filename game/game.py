@@ -8,4 +8,5 @@ while True:
     except ValueError:
         pass
 num=random.choice(range(0,))
-while 
+while True:
+    
