@@ -8,8 +8,7 @@ def main():
 
 
 def get_level():
-    try:
-        return input("Level: ")
+    return int(input("Level: "))
 
 def generate_integer(level):
     print()
