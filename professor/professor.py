@@ -23,7 +23,10 @@ def generate_integer(level):
     while n!=10:
         x=random.choice(range(0,9))
         y=random.choice(range(0,9))
-        
+        true_answer=x+y
+        user_answer=input(f"{x}+{y}:")
+        for _ in range(3):
+            
 
 
 
