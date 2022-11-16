@@ -13,11 +13,10 @@ while True:
     try:
         if(number<num):
             print("Too small!")
-            continue
         elif(number>num):
             print("Too large!")
-            continue
         elif number==num:
             print("Just right!")
+            break
     except(ValueError):
         pass
