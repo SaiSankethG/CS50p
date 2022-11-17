@@ -7,10 +7,10 @@ if len(sys.argv) == 2:
         value = float(sys.argv[1])
     except:
         print("Command-line argument is not a number")
-        sys.exit()
+        sys.exit(1)
 else:
     print("Missing command-line argument")
-    sys.exit()
+    sys.exit(1)
 
 try:
     response = requests.get("https://api.coindesk.com/v1/bpi/currentprice.json")
@@ -20,4 +20,4 @@ try:
     print(f"${user_value:,.4f}")
 except requests.RequestException:
     print("RequestException")
-    sys.exit
+    sys.exit(1)
