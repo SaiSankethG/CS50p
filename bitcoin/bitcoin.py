@@ -2,9 +2,9 @@ import sys
 import requests
 import json
 
-if len(sys.argv)==2:
+if len(sys.argv) == 2:
     try:
-        value=float(sys.argv[2])
+        value = float(sys.argv[2])
     except:
         print("Command-line argument is not a number")
         sys.exit()
@@ -15,9 +15,7 @@ else:
 try:
     response = requests.get("https://api.coindesk.com/v1/bpi/currentprice.json")
     r = response.json()
-    for i in r["bpi"]:
-        for j in i["USD"]:
-            print(j["rate"])
+    print(r["bpi"]["USD"]["rate"])
 except requests.RequestException:
     print("RequestException")
     sys.exit
