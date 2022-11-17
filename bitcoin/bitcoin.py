@@ -15,9 +15,9 @@ else:
 try:
     response = requests.get("https://api.coindesk.com/v1/bpi/currentprice.json")
     r = response.json()
-    true_value=float(r["bpi"]["USD"]["rate"])
+    true_value=float(r["bpi"]["USD"]["rate_float"])
     user_value=true_value*value
-    print(f"${user_value}")
+    print(f"${user_value:,.4f}")
 except requests.RequestException:
     print("RequestException")
     sys.exit
