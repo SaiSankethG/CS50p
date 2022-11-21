@@ -1,8 +1,6 @@
-import sys
-sys.path.insert('../test_twttr/test_twttr.py')
-from twttr import shorten
+import twttr.twttr as shorten
 
 def test_shorten():
-    assert shorten(word)=="wrd"
+    # assert shorten(word)=="wrd"
     assert shorten(Long)=="Lng"
     sys.exit(0)
