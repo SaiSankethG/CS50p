@@ -1,4 +1,8 @@
 from twttr.twttr import shorten
+def main():
+    test_uppercase()
+    test_number()
+    test_lowercase()
 
 def test_uppercase():
     assert shorten('LONG')=='LNG'
@@ -9,4 +13,10 @@ def test_number():
 
 def test_lowercase():
     assert shorten('twitter')=='twttr'
+
+def test_punctuation():
+    assert shorten('?/!.,')=='?/!.,'
+
+if __name__=="__main__":
+    main()
 
