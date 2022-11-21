@@ -1,4 +1,4 @@
-import twttr.twttr as shorten
+from twttr.twttr import shorten
 
 def test_uppercase():
     assert shorten('LONG')=='LNG'
