@@ -1,13 +1,4 @@
-import twttr
+from twttr import shorten
 
 def test_shorten():
-    assert shorten(twitter)=="twttr"
-
-
-
-
-
-
-
-
-
+    assert shorten(word)=="wrd"
