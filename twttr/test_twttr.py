@@ -1,4 +1,1 @@
-import twttr
 
-def main():
-    
