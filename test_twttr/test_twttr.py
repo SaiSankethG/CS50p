@@ -1,4 +1,4 @@
-from twttr.twttr import shorten
+fclrom twttr.twttr import shorten
 def main():
     test_uppercase()
     test_number()

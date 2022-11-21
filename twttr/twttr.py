@@ -13,11 +13,11 @@ def shorten(word):
                 continue
             else:
                 short=short+i
-        # else :
-        #     if i in ["a" , "e" , "i" , "o" , "u" ]:
-        #         continue
-        #     else:
-        #         short=short+i
+        else :
+            if i in ["a" , "e" , "i" , "o" , "u" ]:
+                continue
+            else:
+                short=short+i
     return short
 if __name__=="__main__":
     main()
