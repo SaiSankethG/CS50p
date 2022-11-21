@@ -11,5 +11,6 @@ def value(greeting):
       return ("$20")
    else:
       return ("$100")
-
-main()
+   
+if __name__=="__main_":
+   main()
