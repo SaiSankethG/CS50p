@@ -1,5 +1,8 @@
 from bank import value
 
 def test_bank:
-    assert 
+    assert value(hello)=="$20"
+    assert value(hi)=="$0"
+    assert value(wtf)=="$100"
+    
 
