@@ -1,6 +1,6 @@
 import twttr.twttr as shorten
 
-def test_shorten():
-    # assert shorten(word)=="wrd"
-    assert shorten(Long)=="Lng"
-    sys.exit(0)
+def test_uppercase():
+    assert shorten('LONG')=='LNG'
+    assert shorten('TWITTER')=='TWTTR'
+
