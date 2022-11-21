@@ -5,13 +5,13 @@ def main():
     test_invalid
 
 def test_valid():
-    assert is_valid("CS50")==True'
+    assert is_valid("CS50")==True
 
 def test_invalid():
-    assert is_valid('CS05')=='False'
-    assert is_valid('CS50p')=='False'
-    assert is_valid('H')=="False"
-    assert is_valid('outatime')=='False'
+    assert is_valid('CS05')==False
+    assert is_valid('CS50p')==False
+    assert is_valid('H')==None
+    assert is_valid('outatime')==False
 
 if __name__=="__main__":
     main()
