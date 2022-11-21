@@ -1,9 +1,15 @@
-amount=input("Greeting:")
-dollar=amount.lower()
+def main():
+   amount=input("Greeting:")
+   dollar=amount.lower()
+   dollar=value(dollar)
+   print(dollar)
 
-if dollar.split()[0].replace("," , "")=="hello":
-   print("$0")
-elif dollar[0]=="h" and dollar.split()[0]!="hello":
-   print("$20")
-else:
-   print("$100")
+def value(greeting):
+   if greeting.split()[0].replace("," , "")=="hello":
+      return "$0"
+   elif greeting[0]=="h" and greeting.split()[0]!="hello":
+      return ("$20")
+   else:
+      return ("$100")
+
+main()
