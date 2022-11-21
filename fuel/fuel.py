@@ -1,3 +1,7 @@
+def main():
+
+
+def convert(fraction)
 while True:
     fuel=input("Fraction: ")
     try:
