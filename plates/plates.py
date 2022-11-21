@@ -17,5 +17,5 @@ def is_valid(s):
                     return False
         return True
 
-
-main()
+if __name__=="__main__":
+    main()
