@@ -1,12 +1,11 @@
 def main():
-    
+    while True:
+        fuel=input("Fraction: ")
+        convert(fuel)
 
 
 def convert(fraction)
-while True:
-    fuel=input("Fraction: ")
-    try:
-        num , den=fuel.split("/")
+        num , den=fraction.split("/")
         x=int(num)
         y=int(den)
         f=x/y
