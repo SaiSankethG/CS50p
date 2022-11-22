@@ -8,4 +8,3 @@ def test_convert():
 def test_gauge():
     gauge(0.1)==10
     gauge(1)=='E'
-    
