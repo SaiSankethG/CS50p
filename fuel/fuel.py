@@ -5,7 +5,6 @@ def main():
         print(per)
 
 
-
 def convert(fraction):
     while True:
         try:
@@ -26,6 +25,7 @@ def gauge(f):
         return("F")
     else:
         return(f"{per}%")
+
 if __name__=="__main__":
     main()
 
