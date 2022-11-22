@@ -1,5 +1,4 @@
 def main():
-    while True:
         fuel=input("Fraction: ")
         f=convert(fuel)
         gauge(f)
