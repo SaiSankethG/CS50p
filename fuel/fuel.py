@@ -1,7 +1,8 @@
 def main():
         fuel=input("Fraction: ")
         f=convert(fuel)
-        gauge(f)
+        per=gauge(f)
+        print(per)
 
 
 
@@ -16,11 +17,11 @@ def convert(fraction):
 def gauge(f):
     per=int(f*100)
     if per<=1 :
-        print("E")
+        return "E"
     elif 99<=per:
-        print("F")
+        return("F")
     else:
-        print(f"{per}%")
+        return(f"{per}%")
 if __name__=="__main__":
     main()
 
