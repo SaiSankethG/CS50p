@@ -6,18 +6,19 @@ def main():
 
 
 def convert(fraction):
-    try:
-        num , den=fraction.split("/")
-        x=int(num)
-        y=int(den)
-        f=x/y
-        if f<=1:
-            return f
-        else :
-            fraction=input('Fraction:')
+    while True:
+        try:
+            num , den=fraction.split("/")
+            x=int(num)
+            y=int(den)
+            f=x/y
+            if f<=1:
+                return f
+            else :
+                fraction=input('Fraction:')
+                pass
+        except (ValueError , ZeroDivisionError):
             pass
-    except (ValueError , ZeroDivisionError):
-        pass
 
 def gauge(f):
     per=int(f*100)
