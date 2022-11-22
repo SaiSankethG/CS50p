@@ -4,8 +4,6 @@ def main():
         per=gauge(f)
         print(per)
 
-
-
 def convert(fraction):
         num , den=int(fraction).split("/")
         x=int(num)
