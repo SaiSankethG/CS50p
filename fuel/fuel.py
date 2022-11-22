@@ -7,12 +7,16 @@ def main():
 
 
 def convert(fraction):
-        num , den=fraction.split("/")
-        x=int(num)
-        y=int(den)
-        f=x/y
-        if f<=1:
-            return f
+    while True:
+        try:
+            num , den=fraction.split("/")
+            x=int(num)
+            y=int(den)
+            f=x/y
+            if f<=1:
+                return f
+        except(ValueError ,EOFError):
+            continue
 
 def gauge(f):
     per=int(f*100)
