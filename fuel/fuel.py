@@ -7,7 +7,7 @@ def main():
 
 
 def convert(fraction):
-        num , den=fraction.split("/")
+        num , den=int(fraction).split("/")
         x=int(num)
         y=int(den)
         f=x/y
