@@ -14,6 +14,9 @@ def convert(fraction):
             f=x/y
             if f<=1:
                 return f
+            else :
+                fraction=input('Fraction:')
+                pass
         except(ValueError ,EOFError):
             continue
 
