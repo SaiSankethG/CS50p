@@ -16,7 +16,7 @@ def convert(fraction):
         else :
             fraction=input('Fraction:')
             pass
-    except (ValueError , ZeroDivisonError):
+    except (ValueError , ZeroDivisionError):
         pass
 
 def gauge(f):

@@ -8,4 +8,7 @@ def test_convert():
     assert convert('1')==None
 
 def test_zerodivison():
+    with pytest.raises(ZeroDivisionError):
+        convert('1/0')
+
 
