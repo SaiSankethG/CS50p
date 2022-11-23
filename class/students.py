@@ -12,7 +12,7 @@ with open("names.csv") as file:
     #     student={"name":name , "college":college}
     #     students.append(student)
     read=csv.reader(file)
-    for r in read:
+    for name ,home in read:
         students.append({"name":name , "home":home})
-for student in sorted(students, key=lambda student:student["name"]):
+for student in sorted(students, key=lambda student:student["home"]):
     print(f"{student['name']} is from {student['home']}")
