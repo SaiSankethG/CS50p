@@ -13,6 +13,6 @@ with open("names.csv") as file:
     #     students.append(student)
     read=csv.DictReader(file)
     for row in read:
-        students.append({"name":name , "home":home})
+        students.append({"name":row["name"] , "home":row["home"]})
 for student in sorted(students, key=lambda student:student["home"]):
     print(f"{student['name']} is from {student['home']}")
