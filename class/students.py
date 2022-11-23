@@ -11,8 +11,8 @@ with open("names.csv") as file:
     #     student={}
     #     student={"name":name , "college":college}
     #     students.append(student)
-    read=csv.reader(file)
-    for name ,home in read:
+    read=csv.DictReader(file)
+    for row in read:
         students.append({"name":name , "home":home})
 for student in sorted(students, key=lambda student:student["home"]):
     print(f"{student['name']} is from {student['home']}")
