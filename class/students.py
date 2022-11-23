@@ -5,10 +5,11 @@
 
 students=[]
 
-with open(names.csv) as file:
+with open("names.csv") as file:
     for line in file:
         name, college=line.rstrip().split(",")
-        students.append(f"{name} is in {college}")
+        student={}
+        student["name"]=name
+        student["house"]=house
+        students.append(student)
 
-for i in sorted(students):
-    print(i)
