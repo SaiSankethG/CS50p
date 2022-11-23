@@ -12,8 +12,5 @@ with open("names.csv") as file:
         student={"name":name , "college":college}
         students.append(student)
 
-def getname(student):
-    return student["college"]
-
-for student in sorted(students, key=getname):
+for student in sorted(students, key=lambda student:student["name"]):
     print(f"{student['name']} is in {student['college']}")
