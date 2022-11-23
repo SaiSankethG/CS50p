@@ -11,6 +11,8 @@ with open("names.csv") as file:
     #     student={}
     #     student={"name":name , "college":college}
     #     students.append(student)
-    
+    read=csv.reader(file)
+    for r in read:
+        students.append({"name":name , "home":home})
 for student in sorted(students, key=lambda student:student["name"]):
-    print(f"{student['name']} is in {student['college']}")
+    print(f"{student['name']} is from {student['home']}")
