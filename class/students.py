@@ -20,5 +20,6 @@ import csv
 
 name=input("whats your name?")
 home=input("Where's your name?")
-with open("names.csv" ,"w") as file:
-    
+with open("names.csv" ,"a") as file:
+    writer=csv.writer(file)
+    writer.writerow([name, home])
