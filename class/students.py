@@ -21,5 +21,5 @@ import csv
 name=input("whats your name?")
 home=input("Where's your name?")
 with open("names.csv" ,"a") as file:
-    writer=csv.writer(file)
+    writer=csv.DictWriter(file)
     writer.writerow([name, home])
