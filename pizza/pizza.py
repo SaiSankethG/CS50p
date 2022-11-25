@@ -16,7 +16,7 @@ def table():
     if "regular.csv" in sys.argv[1]:
         open("regular.csv" , "r") as file:
             tab=csv.DictWriter(file , fieldnames=["name" , "small" , "large"])
-            
+            print(tabulate(tab , header , tablefmt="grid"))
 
 
 
