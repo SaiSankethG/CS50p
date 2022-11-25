@@ -8,10 +8,11 @@ def main():
         with open(sys.argv[1] , "r") as file:
             write=csv.DictReader(file)
             for w in write:
-                name=w["name"].split(",")
-                output.append()
+                split_name=w["name"].split(",")
+                output.append({'first':split_name[1].lstrip() , 'last':split_name[0] , 'house':w["house"]})
     except FileNotFoundError:
         sys.exit(f"Could not read {sys.argv[1]}")
+    print(output)
 
 def command_line_arguments():
     if len(sys.argv)<3:
