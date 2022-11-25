@@ -21,7 +21,7 @@ def table():
                 #     print(t["name"] , t["small"] , t["large"])
                 print(tabulate(tab,headers="firstrow", tablefmt="grid"))
         if "sicilian.csv" in sys.argv[1]:
-            with open("regular.csv" , "r") as file:
+            with open("sicilian.csv" , "r") as file:
                 tab=csv.DictReader(file , fieldnames=["name" , "small" , "large"])
                 # for t in tab:
                 #     print(t["name"] , t["small"] , t["large"])
