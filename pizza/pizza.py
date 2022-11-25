@@ -18,7 +18,7 @@ def table():
             tab=csv.DictReader(file , fieldnames=["name" , "small" , "large"])
             # for t in tab:
             #     print(t["name"] , t["small"] , t["large"])
-            print(tabulate(tab, tablefmt="grid"))
+            print(tabulate(tab,headers, tablefmt="grid"))
 
 if __name__=="__main__":
     main()
