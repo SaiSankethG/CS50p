@@ -14,7 +14,7 @@ def command_line_arguments():
         sys.exit("Too few command-line arguments")
     if len(sys.argv)>3:
         sys.exit("Too many command-line arguments")
-    if ".csv" not in sys.argv[1]:
+    if ".csv" not in sys.argv[1] and sys.argv[2]:
         sys.exit("Not a csv file")
 
 if __name__=="__main__":
