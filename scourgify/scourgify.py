@@ -6,6 +6,8 @@ def main():
     try:
         with open("sys.argv[1]" , "r") as file:
             write=csv.DictReader()
+    except FileNotFoundError:
+        sys.exit("File do not exist")
 
 def command_line_arguments():
     if len(sys.argv)<1:
