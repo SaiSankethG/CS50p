@@ -16,3 +16,6 @@ def command_line_arguments():
         sys.exit("Too many command-line arguments")
     if ".csv" not in sys.argv[1]:
         sys.exit("Not a csv file")
+
+if __name__=="__main__":
+    main()
