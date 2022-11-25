@@ -15,7 +15,7 @@ def main():
 def table():
     if "regular.csv" in sys.argv[1]:
         open("regular.csv" , "r") as file:
-            
+            tab=
 
 
 
