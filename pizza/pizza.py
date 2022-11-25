@@ -13,18 +13,21 @@ def main():
         table()
 
 def table():
-    if "regular.csv" in sys.argv[1]:
-        with open("regular.csv" , "r") as file:
-            tab=csv.DictReader(file , fieldnames=["name" , "small" , "large"])
-            # for t in tab:
-            #     print(t["name"] , t["small"] , t["large"])
-            print(tabulate(tab,headers="firstrow", tablefmt="grid"))
-    if "sicilian.csv" in sys.argv[1]:
-        with open("regular.csv" , "r") as file:
-            tab=csv.DictReader(file , fieldnames=["name" , "small" , "large"])
-            # for t in tab:
-            #     print(t["name"] , t["small"] , t["large"])
-            print(tabulate(tab,headers="firstrow", tablefmt="grid"))
+    try:
+        if "regular.csv" in sys.argv[1]:
+            with open("regular.csv" , "r") as file:
+                tab=csv.DictReader(file , fieldnames=["name" , "small" , "large"])
+                # for t in tab:
+                #     print(t["name"] , t["small"] , t["large"])
+                print(tabulate(tab,headers="firstrow", tablefmt="grid"))
+        if "sicilian.csv" in sys.argv[1]:
+            with open("regular.csv" , "r") as file:
+                tab=csv.DictReader(file , fieldnames=["name" , "small" , "large"])
+                # for t in tab:
+                #     print(t["name"] , t["small"] , t["large"])
+                print(tabulate(tab,headers="firstrow", tablefmt="grid"))
+    except FileNotFoundError:
+        sys.exit("File does not exist")
 
 if __name__=="__main__":
     main()
