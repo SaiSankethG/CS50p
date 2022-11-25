@@ -15,7 +15,8 @@ def main():
 def table():
     if "regular.csv" in sys.argv[1]:
         open("regular.csv" , "r") as file:
-            tab=
+            tab=csv.DictWriter(file , fieldnames=["name" , "small" , "large"])
+            
 
 
 
