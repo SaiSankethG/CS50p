@@ -22,6 +22,8 @@ def table():
             with open("sicilian.csv" , "r") as file:
                 tab=csv.DictReader(file , fieldnames=["name" , "small" , "large"])
                 print(tabulate(tab,headers="firstrow", tablefmt="grid"))
+        if "regular" and "sicilian" not in sys.argv[1]:
+            print("File does not exist")
     except FileNotFoundError:
         sys.exit("File does not exist")
 
