@@ -4,8 +4,10 @@ import sys
 def main():
     command_line_arguments()
     try:
-        with open("sys.argv[1]" , "r") as file:
-            write=csv.DictReader()
+        with open(sys.argv[1] , "r") as file:
+            write=csv.DictReader(file)
+            for w in write:
+                print(w)
     except FileNotFoundError:
         sys.exit(f"Could not read {sys.argv[1]}")
 
