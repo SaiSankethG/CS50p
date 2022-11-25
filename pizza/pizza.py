@@ -10,15 +10,15 @@ def main():
     if ".csv" not in sys.argv[1]:
         sys.exit("Not a CSV file")
     if ".csv" in sys.argv[1]:
-        table()
+        table(sys.argv[1])
 
-def table():
+def table(files_csv):
     try:
-        if "regular.csv" in sys.argv[1]:
+        if "regular.csv" in files_csv:
             with open("regular.csv" , "r") as file:
                 tab=csv.DictReader(file , fieldnames=["name" , "small" , "large"])
                 print(tabulate(tab,headers="firstrow", tablefmt="grid"))
-        if "sicilian.csv" in sys.argv[1]:
+        if "sicilian.csv" in files_csv:
             with open("sicilian.csv" , "r") as file:
                 tab=csv.DictReader(file , fieldnames=["name" , "small" , "large"])
                 print(tabulate(tab,headers="firstrow", tablefmt="grid"))
