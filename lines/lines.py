@@ -16,6 +16,7 @@ def main():
 
 def lines_of_code():
     with open(sys.argv[1] , "r") as file:
+        lines=readlines(file)
 
 if __name__=="__main__":
     main()
