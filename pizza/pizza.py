@@ -22,6 +22,7 @@ def table(files_csv):
             with open("sicilian.csv" , "r") as file:
                 tab=csv.DictReader(file , fieldnames=["name" , "small" , "large"])
                 print(tabulate(tab,headers="firstrow", tablefmt="grid"))
+        if ""
     except FileNotFoundError:
         sys.exit("File does not exist")
 
