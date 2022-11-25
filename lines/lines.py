@@ -15,6 +15,8 @@ def lines_of_code():
     try:
         with open(sys.argv[1] , "r") as file:
             lines=file.readlines()
+            for line in lines:
+                
      except FileNotFoundError:
         sys.exit("File not Found")
 
