@@ -12,7 +12,12 @@ def main():
                 output.append({'first':split_name[1].lstrip() , 'last':split_name[0] , 'house':w["house"]})
     except FileNotFoundError:
         sys.exit(f"Could not read {sys.argv[1]}")
-    print(output)
+    with open(sys.argv[2] , "w") as file:
+        writer=csv.DictWriter(file, fieldnames=["first" , "last" , "house"])
+        writer.writerow({"first":"first" , "last":"last" , "house":"house"})
+        for row in output:
+            writer.writerow({"first":row["first"] , "last":row["last"] , "house":row["house"]})
+
 
 def command_line_arguments():
     if len(sys.argv)<3:
