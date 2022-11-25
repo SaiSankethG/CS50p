@@ -10,7 +10,7 @@ def main():
         sys.exit("File do not exist")
 
 def command_line_arguments():
-    if len(sys.argv)<1:
+    if len(sys.argv)<3:
         sys.exit("Too few command-line arguments")
     if len(sys.argv)>3:
         sys.exit("Too many command-line arguments")
