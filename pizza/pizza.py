@@ -13,6 +13,7 @@ def main():
         table()
 
 def table():
+    try:
     if "regular.csv" in sys.argv[1]:
         with open("regular.csv" , "r") as file:
             tab=csv.DictReader(file , fieldnames=["name" , "small" , "large"])
@@ -21,6 +22,8 @@ def table():
         with open("sicilian.csv" , "r") as file:
             tab=csv.DictReader(file , fieldnames=["name" , "small" , "large"])
             print(tabulate(tab,headers="firstrow", tablefmt="grid"))
+    except FileNotFoundError:
+        sys.exit("File does not exist")
 
 if __name__=="__main__":
     main()
