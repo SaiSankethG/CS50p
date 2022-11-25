@@ -17,12 +17,12 @@ def table():
         if "regular.csv" in sys.argv[1]:
             with open("regular.csv" , "r") as file:
                 tab=csv.DictReader(file , fieldnames=["name" , "small" , "large"])
-                sys.exit(tabulate(tab,headers="firstrow", tablefmt="grid"))
-        if "sicilian.csv" in sys.argv[1]:
+                print(tabulate(tab,headers="firstrow", tablefmt="grid"))
+        elif "sicilian.csv" in sys.argv[1]:
             with open("sicilian.csv" , "r") as file:
                 tab=csv.DictReader(file , fieldnames=["name" , "small" , "large"])
-                sys.exit(tabulate(tab,headers="firstrow", tablefmt="grid"))
-        if "regular" and "sicilian" not in sys.argv[1]:
+                print(tabulate(tab,headers="firstrow", tablefmt="grid"))
+        else "regular" and "sicilian" not in sys.argv[1]:
             sys.exit("File does not exist")
     except FileNotFoundError:
         sys.exit("File does not exist")
