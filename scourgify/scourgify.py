@@ -3,11 +3,13 @@ import sys
 
 def main():
     command_line_arguments()
+    output=[]
     try:
         with open(sys.argv[1] , "r") as file:
             write=csv.DictReader(file)
             for w in write:
-                print(w)
+                name=w["name"].split(",")
+                output.append()
     except FileNotFoundError:
         sys.exit(f"Could not read {sys.argv[1]}")
 
