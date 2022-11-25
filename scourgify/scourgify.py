@@ -4,7 +4,8 @@ import sys
 def main():
     command_line_arguments()
     try:
-        
+        with open("sys.argv[1]" , "r") as file:
+            write=csv.DictReader()
 
 def command_line_arguments():
     if len(sys.argv)<1:
