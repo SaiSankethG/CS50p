@@ -15,9 +15,16 @@ def lines_of_code():
     try:
         with open(sys.argv[1] , "r") as file:
             lines=file.readlines()
+            count=0
             for line in lines:
-                
-     except FileNotFoundError:
+                if line.isspace() == True:
+                    pass
+                elif line.lstrip().startswith("#")==True:
+                    pass
+                else:
+                    count+=1
+            print(count)
+    except FileNotFoundError:
         sys.exit("File not Found")
 
 if __name__=="__main__":
