@@ -15,10 +15,10 @@ def main():
 def table():
     if "regular.csv" in sys.argv[1]:
         with open("regular.csv" , "r") as file:
-            tab=csv.DictWriter(file , fieldnames=["name" , "small" , "large"])
-            for t in tab:
-                print(t["name"] , t["small"] , t["large"])
-            # print(tabulate(tab, tablefmt="grid"))
+            tab=csv.DictReader(file , fieldnames=["name" , "small" , "large"])
+            # for t in tab:
+            #     print(t["name"] , t["small"] , t["large"])
+            print(tabulate(tab, tablefmt="grid"))
 
 if __name__=="__main__":
     main()
