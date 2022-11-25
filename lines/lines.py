@@ -15,5 +15,7 @@ def main():
         sys.exit(0)
 
 def lines_of_code():
-    print("hello")
-main()
+    with open(sys.argv[1] , "r") as file:
+
+if __name__=="__main__":
+    main()
