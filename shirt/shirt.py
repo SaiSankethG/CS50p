@@ -27,6 +27,5 @@ def check(file):
     if file in [".png" , ".jpg" , ".jpeg"]:
         return True
     return False
-    retur
 if __name__=="__main__":
     main()
