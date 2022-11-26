@@ -16,6 +16,17 @@ def validate():
     #     sys.exit("Invalid input")
     # if sys.argv[1].split(".") != sys.argv[2].split("."):
     #     sys.exit("Input and output have different extensions")
-    
+    if check(file1)==False:
+        sys.exit("Invalid input")
+    if check(file2)==False:
+        sys.exit("Invalid input")
+    if file1[1].lower()!= file2[1].lower():
+        sys.exit("Input and output have different extensions")
+
+def check(file):
+    if file in [".png" , ".jpg" , ".jpeg"]:
+        return True
+    return False
+    retur
 if __name__=="__main__":
     main()
