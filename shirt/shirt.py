@@ -2,8 +2,8 @@ import sys
 from PIL import image
 def main():
     validate()
-    try:
-        
+    # try:
+
 
 def validate():
     if len(sys.argv)<3:
@@ -12,3 +12,5 @@ def validate():
         sys.exit("Too many command-line arguments")
     if sys.argv[1].split(".") != sys.argv[2].split("."):
         sys.exit("Input and output have different extensions")
+if __name__=="__main__":
+    main()
