@@ -1,5 +1,6 @@
 import sys
-# from PIL import image
+from PIL import imagef
+from os
 def main():
     validate()
     # try:
