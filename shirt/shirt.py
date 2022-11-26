@@ -1,6 +1,6 @@
 import sys
-from PIL import imagef
-from os
+from PIL import Image, ImageOps
+from os.path import splitext
 def main():
     validate()
     # try:
