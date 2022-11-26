@@ -1,5 +1,5 @@
 import sys
-from PIL import image
+# from PIL import image
 def main():
     validate()
     # try:
