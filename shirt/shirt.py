@@ -4,9 +4,12 @@ from os.path import splitext
 def main():
     validate()
     try:
-        PIL.Image.open(sys.argv[1], mode="r", formats=None)
-    except:
-        print()
+        image=Image.open(sys.argv[1])
+    except FileNotFoundError:
+        sys.exit("Input does not exist")
+    shirt=Image.open("shirt.png")
+    size=shirt.size
+
 
 def validate():
     if len(sys.argv)<3:
