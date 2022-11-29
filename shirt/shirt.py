@@ -4,6 +4,7 @@ from os.path import splitext
 def main():
     validate()
     try:
+        PIL.Image.open(sys.argv[1], mode="r", formats=None)
         
 
 
