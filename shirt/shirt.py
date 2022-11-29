@@ -10,7 +10,8 @@ def main():
     shirt=Image.open("shirt.png")
     size=shirt.size
     muppet_image=ImageOps.fit(image , size)
-    Image.paste()
+    muppet_image.paste(shirt , shirt)
+    muppet_image.save(sys.argv[2])
 
 
 def validate():
