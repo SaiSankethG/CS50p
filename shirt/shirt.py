@@ -9,6 +9,7 @@ def main():
         sys.exit("Input does not exist")
     shirt=Image.open("shirt.png")
     size=shirt.size
+    
 
 
 def validate():
