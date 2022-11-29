@@ -13,8 +13,8 @@ def validate():
         sys.exit("Too many command-line arguments")
     file1=splitext(sys.argv[1])
     file2=splitext(sys.argv[2])
-    print(file1)
-    print(file2)
+    # print(file1)
+    # print(file2)
     # if ".png"and".jpg"and".jpeg" not in sys.argv[1] and sys.argv[2]:
     #     sys.exit("Invalid input")
     # if sys.argv[1].split(".") != sys.argv[2].split("."):
@@ -27,7 +27,7 @@ def validate():
         sys.exit("Input and output have different extensions")
 
 def check(file):
-    if file in [".png" , ".jpg" , ".jpeg"]:
+    if file[1] in [".png" , ".jpg" , ".jpeg"]:
         return True
     return False
 if __name__=="__main__":
