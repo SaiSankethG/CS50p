@@ -10,7 +10,7 @@ def main():
     shirt=Image.open("shirt.png")
     size=shirt.size
     ImageOps.fit(image , size)
-
+    
 
 def validate():
     if len(sys.argv)<3:
