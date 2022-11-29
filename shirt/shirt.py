@@ -5,8 +5,8 @@ def main():
     validate()
     try:
         PIL.Image.open(sys.argv[1], mode="r", formats=None)
-        
-
+    except:
+        print()
 
 def validate():
     if len(sys.argv)<3:
