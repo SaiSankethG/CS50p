@@ -8,7 +8,7 @@ email=input("whats your email?").strip()
 #     print("Valid")
 # else:
 #     print("Invalid")
-if re.search(r"^\w+@\w+\.(edu|.ac.in)$" , email , ):
+if re.search(r"^\w+@\w+\.(edu|.ac.in)$" , email , re.IGNORECASE):
     print("Valid")
 else:
     print("Invalid")
