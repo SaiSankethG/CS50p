@@ -8,7 +8,7 @@ email=input("whats your email?").strip()
 #     print("Valid")
 # else:
 #     print("Invalid")
-if re.search(r"^[a-zA-Z0-9_.]+@[a-zA-Z0-9._]+\.edu$" , email):
+if re.search(r"^\w+@\w+\.edu$" , email):
     print("Valid")
 else:
     print("Invalid")
