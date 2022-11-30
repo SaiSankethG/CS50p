@@ -1,2 +1,3 @@
+import re
 name=input("Whats your name?").strip()
-print(f"")
+re.search(r"^.+, .+$" , name)
