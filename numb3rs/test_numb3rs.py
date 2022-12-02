@@ -1,4 +1,4 @@
-import numb3rs.numb3rs as validate
+from numb3rs.numb3rs import validate
 
 def main():
     test_char()
@@ -6,8 +6,8 @@ def main():
     test_range()
 
 def test_char():
-    assert validate(cat)==False
-    assert validate(dog)==False
+    assert validate("cat")==False
+    assert validate("dog")==False
 def test_out_of_range():
     assert validate("277.0.0.1")==False
     assert validate("255.255.255.288")==False
