@@ -1,4 +1,4 @@
-import numb3rs
+from numb3rs.numb3rs import validate
 
 def main():
     test_char()
