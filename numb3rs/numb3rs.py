@@ -9,7 +9,7 @@ def main():
 def validate(ip):
     if re.search(r"[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+" , ip):
         list_of_numbers=ip.split(".")
-        if list_of_numbers in [0-255]:
+        if list_of_numbers in range(255):
             return True
         else:
             return False
