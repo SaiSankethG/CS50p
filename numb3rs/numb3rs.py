@@ -1,10 +1,10 @@
 import re
-import sys
+#import sys
 
 
 def main():
     print(validate(input("IPv4 Address: ")))
-    sys.exit(0)
+    # sys.exit(0)
 
 
 def validate(ip):
