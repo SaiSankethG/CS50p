@@ -7,7 +7,8 @@ def main():
 
 
 def parse(s):
-    url[]=s
+    url=list(s.split(" "))
+    print(url)
 
 if __name__ == "__main__":
     main()
