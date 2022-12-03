@@ -6,7 +6,7 @@ def main():
     print(convert(input("Hours: ")))
 
 
-def convert(s):
+def convert(time):
     # try :
     #     if re.search(r"^([0-9]\.[0-9][0-9])(.*to.*)([0-9]\.[0-9][0-9]).*$" , s):
     #         if
