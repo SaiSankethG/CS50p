@@ -7,11 +7,7 @@ def main():
 
 
 def parse(s):
-    li=list(s.split(" "))
-    #print(url)
-    if "src" in li:
-        url=li.split("=")
-        print(url)
+    
 
 
 
