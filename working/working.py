@@ -9,7 +9,7 @@ def main():
 def convert(s):
     try :
         if re.search(r"^([0-9]\.[0-9][0-9])(.*to.*)([0-9]\.[0-9][0-9]).*$" , s):
-            
+            if 
     except ValueError:
         print("It is not valid")
 
