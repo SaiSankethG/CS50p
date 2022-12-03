@@ -8,7 +8,9 @@ def main():
 
 def parse(s):
     if re.search(r"<iframe.*><\/iframe>" , s):
-        
+        url=re.search(r"https?:\/\/(www\.)?youtube\.com\/embed\/[A-Za-z0-9]+" ,s)
+        if url:
+
 
 
 
