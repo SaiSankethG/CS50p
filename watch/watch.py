@@ -13,8 +13,5 @@ def parse(s):
             split_url=url.groups()
             return "https://youtu.be/" + split_url[2]
 
-
-
-
 if __name__ == "__main__":
     main()
