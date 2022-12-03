@@ -7,7 +7,9 @@ def main():
 
 
 def parse(s):
-    
+    if re.search(r"<iframe.*><\/iframe>" , s):
+        
+
 
 
 
