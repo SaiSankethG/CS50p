@@ -1,9 +1,11 @@
 from numb3rs.numb3rs import validate
+import sys
 
 def main():
     test_char()
     test_out_of_range()
     test_range()
+    sys.exit(0)
 
 def test_char():
     assert validate("cat")==False
