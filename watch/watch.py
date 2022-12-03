@@ -7,8 +7,13 @@ def main():
 
 
 def parse(s):
-    url=list(s.split(" "))
-    print(url)
+    li=list(s.split(" "))
+    #print(url)
+    if "src" in li:
+        url=li.split("=")
+        print(url)
+
+
 
 if __name__ == "__main__":
     main()
