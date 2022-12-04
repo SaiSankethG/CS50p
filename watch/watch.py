@@ -16,6 +16,7 @@ def convert(s):
             time[4]=":00"
             if time[2] == "AM" or "PM":
                 if time[2] == "AM":
+                    
                     print(f"{time[0]:02}" , time[1] , " to " ,sep='' , end='')
                 elif time[2] == "PM":
                     time[0]=int(time[0])+12
