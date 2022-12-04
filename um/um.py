@@ -13,7 +13,7 @@ def count(s):
     #     if u == "um":
     #         count_um += 1
     # return count_um
-    um=re.findall( r"[^a-z]um[^a-z]" , s)
+    um=re.findall( r"[^a-z]uU?m[^a-z]" , s)
     print(um)
     # for all_um in um:
     #     if all_um == "um":
