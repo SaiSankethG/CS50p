@@ -7,7 +7,7 @@ def main():
 
 
 def count(s):
-    um = re.compile("um ")
+    um = re.compile(r"um[^\w]+")
     count_um = 0
     for u in um.findall(s):
         if u == "um":
