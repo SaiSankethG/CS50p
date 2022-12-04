@@ -12,9 +12,9 @@ def test_valid():
     assert convert("10:30 PM to 8:50 AM")=="22:30 to 08:50"
 
 def test_valueerror():
-    with pytest.raise(ValueError):
+    with pytest.raises(ValueError):
         convert('9 AM - 9 PM')
-    with pytest.raise(ValueError):
-        conver('13 PM to 17 PM')
+    with pytest.raises(ValueError):
+        convert('13 PM to 17 PM')
 if __name__=="__main__":
     main()
