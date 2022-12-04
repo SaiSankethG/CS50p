@@ -12,7 +12,9 @@ def convert(s):
         pieces=correct_format.groups()
         if int(pieces[1])>12 or int(pieces[5])>12:
             raise ValueError
-        return pieces
+        first=new_format(pieces[1] , pieces[2] , pieces[3])
+        second=new_format(pieces[5] , pieces[6] , pieces[7])
+        return first +' to  '+second
     else:
         raise ValueError
 
@@ -33,8 +35,6 @@ def new_format(hour , minute, am_pm):
     else:
         new_time=f"{new_hour:02}" +":"+ minute
     return new_time
-
-
 
 
 if __name__ == "__main__":
