@@ -3,7 +3,7 @@ import sys
 
 
 def main():
-    convert(input("Hours: "))
+    print(convert(input("Hours: ")))
 
 
 def convert(s):
@@ -14,7 +14,7 @@ def convert(s):
             raise ValueError
         first=new_format(pieces[1] , pieces[2] , pieces[3])
         second=new_format(pieces[5] , pieces[6] , pieces[7])
-        return first +' to  '+second
+        return first +' to '+second
     else:
         raise ValueError
 
