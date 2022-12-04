@@ -23,7 +23,18 @@ def new_format(hour , minute, am_pm):
         else:
             new_hour=int(hour)+12
     else:
-        if int(hour)
+        if int(hour)==12:
+            new_hour=0
+        else:
+            new_hour=int(hour)
+    if minute==None:
+        new_minute=":00"
+        new_time=f"{new_hour:02}"+ new_minute
+    else:
+        new_time=f"{new_hour:02}" +":"+ minute
+    return new_time
+
+
 
 
 if __name__ == "__main__":
