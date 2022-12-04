@@ -1,4 +1,5 @@
 from um.um import count
+import sys
 
 def main():
 #     test_value()
@@ -6,6 +7,7 @@ def main():
     test_upper_lower_case()
     test_word_with_um()
     test_by_space()
+    sys.exit(0)
 
 def test_upper_lower_case():
     assert count("Um , thanks for the album")==1

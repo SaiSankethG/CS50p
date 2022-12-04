@@ -4,6 +4,7 @@ import sys
 
 def main():
     print(count(input("Text: ")))
+    sys.exit(0)
 
 
 def count(s):
