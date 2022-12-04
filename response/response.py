@@ -1,5 +1,5 @@
 import re
-import 
+from validator_collection import validators, checkers, errors
 
 email=input("whats your email?").strip()
 
