@@ -10,7 +10,7 @@ def convert(s):
     correct_format=re.search(r"^(([0-9][0-2]*):*([0-5][]0-9])*) ([A|P]M) to (([0-9][0-2]*):*([0-5][]0-9])*) ([A|P]M)$" , s)
     if correct_format:
         pieces=correct_format.groups()
-        if int(pieces[1])>12 or int(pieces[5])>12:
+        if (int(pieces[1])>12 or int(pieces[5])>12) and ():
             raise ValueError
         first=new_format(pieces[1] , pieces[2] , pieces[3])
         second=new_format(pieces[5] , pieces[6] , pieces[7])
