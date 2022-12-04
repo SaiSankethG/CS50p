@@ -8,8 +8,6 @@ def main():
 
 
 def count(s):
-    if s== "Um? Mum? Is this that album where, um, umm, the clumsy alums play drums?...":
-        return 2
     all_um = re.findall(r"\b\W*um\W*", s ,re.IGNORECASE)
     #print(all_um)
     return len(all_um)
