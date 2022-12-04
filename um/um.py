@@ -13,9 +13,9 @@ def count(s):
     #     if u == "um":
     #         count_um += 1
     # return count_um
-    um=re.findall( r"um[^\w]*" , s)
-    count=0
-    print(um)
-
+    um=re.findall( r"[^\w]*um[^\w]*" , s)
+    for all_um in um:
+        if all_um == "um":
+            
 if __name__ == "__main__":
     main()
