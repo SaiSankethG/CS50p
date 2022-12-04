@@ -9,7 +9,7 @@ def main():
 def count(s):
     um = re.compile(r"um[^\w]+")
     count_um = 0
-    for u in um.findall(s):
+    for u in um.finditer(s):
         if u == "um":
             count_um += 1
     return count_um
