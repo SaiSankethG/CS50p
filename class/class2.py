@@ -10,7 +10,7 @@ def main():
 def get_student():
     name=input("Name: ")
     house=input("House:")
-    student=Student(name ,house)
+    student=Student(name ,house)  #constructor when the Student is called it will be created.
     return student
 
 if __name__=="__main__":
