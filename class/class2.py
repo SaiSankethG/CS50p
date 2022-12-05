@@ -6,6 +6,8 @@ class Student:
             raise ValueError("Invalid House")
         self.name=name
         self.house=house
+    def __str__(self):
+        
 
 def main():
     student=get_student()
