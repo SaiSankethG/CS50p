@@ -9,7 +9,8 @@ class Student:
     def __str__(self):
         return f"{self.name} from {self.house}"
     def charm(self):
-        match self.patrnous
+        match self.patrnous:
+            case ""
 
 def main():
     student=get_student()
