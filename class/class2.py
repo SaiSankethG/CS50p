@@ -17,11 +17,12 @@ class Student:
     def house(self , house):
         if house not in ["Gryffindor" , "Revanclaw", "Slytherin" , "Hufflepuf"]:
             raise ValueError("Invalid house")
-        self.house=house
+        self._house=house
 
 
 def main():
     student=get_student()
+    #student.house="Blue"
     print(student)
 
 def get_student():
