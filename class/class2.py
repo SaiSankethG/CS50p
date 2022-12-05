@@ -6,10 +6,11 @@ class Student:
             raise ValueError("Invalid House")
         self.name=name
         self.house=house
+        self.patronus=patronus
     def __str__(self):
         return f"{self.name} from {self.house}"
     def charm(self):
-        match self.patrnous:
+        match self.patronus:
             case "stag":
                 return "stag"
             case "Otter":
@@ -26,7 +27,8 @@ def main():
 def get_student():
     name=input("Name: ")
     house=input("House:")
-    student=Student(name ,house)  #constructor when the Student is called it will be created.
+    patronus=input("patronus:")
+    student=Student(name ,house , patronus)  #constructor when the Student is called it will be created.
     return student
 
 if __name__=="__main__":
