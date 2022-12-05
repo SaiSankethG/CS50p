@@ -1,5 +1,5 @@
 class Student:
-    def __init__(self , name, house):
+    def __init__(self , name, house):  #it is dunder init method.it is should contain a default name.
         self.name=name
         self.house=house
 
