@@ -10,11 +10,18 @@ class Student:
         return f"{self.name} from {self.house}"
     def charm(self):
         match self.patrnous:
-            case ""
+            case "stag":
+                return "stag"
+            case "Otter":
+                return "Otter"
+            case "Jack Rusell terrier":
+                return "Jack Rusell terrier"
+            case _:
+                return "wand"
 
 def main():
     student=get_student()
-    print(student)
+    print(student.charm())
 
 def get_student():
     name=input("Name: ")
