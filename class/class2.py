@@ -6,6 +6,14 @@ class Student:
         self.house=house
     def __str__(self):
         return f"{self.name} from {self.house}"
+    @property
+    def name(self):
+        return self._name
+    @name.setter
+    def house(self, name):
+        if not name:
+            raise ValueError("Missing Name")
+        self._name=name
 
     @property
     #getter
