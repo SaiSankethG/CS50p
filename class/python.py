@@ -1,0 +1,5 @@
+class Wizard:
+    ...
+
+class Student:
+    
