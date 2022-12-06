@@ -1,16 +1,15 @@
 class Student:
     def __init__(self , name, house ):  #it is dunder init method.it is should contain a default name.
-        if not name:
-            raise ValueError("Missing Name")
         self.name=name
         self.house=house
     def __str__(self):
         return f"{self.name} from {self.house}"
+
     @property
     def name(self):
         return self._name
     @name.setter
-    def house(self, name):
+    def name(self, name):
         if not name:
             raise ValueError("Missing Name")
         self._name=name
