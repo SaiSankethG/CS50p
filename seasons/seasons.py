@@ -7,7 +7,7 @@ class no_of_minutes:
         self.userdate=user_date
     def convert_minutes(self):
         year,month, day=self.userdate.split("-")
-        return date(int(year) , int(month) , int(day)).isocalendar()
+        return list(date(int(year) , int(month) , int(day)).isocalendar())
 
 
 
@@ -18,7 +18,7 @@ def main():
         user_minutes=no_of_minutes(user_date)
         user_calendar=user_minutes.convert_minutes()
         print(user_calendar)
-        today=()
+        today=[]
         today=date.today().day
         today=date.today().month
         today=date.today().year
