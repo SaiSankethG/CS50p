@@ -6,8 +6,7 @@ class no_of_minutes:
     def __init__(self , user_date):
         self.userdate=user_date
     def convert_minutes(self):
-        calendar_date=date.isocalendar(self.userdate)
-        print(calendar_date)
+        return date.isocalendar(self.userdate)
 
 
 
