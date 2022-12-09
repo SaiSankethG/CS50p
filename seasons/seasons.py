@@ -5,8 +5,8 @@ import inflect
 class no_of_minutes:
     def __init__(self , user_date):
         self.userdate=user_date
-    def canvert_minutes(self , date):
-        
+    def canvert_minutes(self , input_date):
+        calendar_date=c
 
 
 
