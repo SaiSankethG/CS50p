@@ -10,8 +10,8 @@ class no_of_minutes:
         self.day=day
 
         #print(year, month , day)
-    def __sub__(self ,other):
-        
+    #def __sub__(self ,other):
+
 
 
 
