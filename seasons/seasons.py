@@ -18,7 +18,12 @@ def main():
         user_minutes=no_of_minutes(user_date)
         user_calendar=user_minutes.convert_minutes()
         print(user_calendar)
-
+        today=date.today()
+        print(today)
+        
+        # today_minutes=no_of_minutes(today)
+        # today_calendar=today_minutes.convert_minutes()
+        # print(today_calendar)
 
 
     except ValueError:
