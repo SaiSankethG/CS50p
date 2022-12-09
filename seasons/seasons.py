@@ -12,11 +12,13 @@ def main():
     user_date=input("Date of Birth: ")
     try:
         date.fromisoformat(user_date)
-        
+        user_minutes=no_of_minutes(user_date)
+
 
 
     except ValueError:
         print("Invalid date")
+
 
 
 ...
