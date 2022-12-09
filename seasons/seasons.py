@@ -18,7 +18,10 @@ def main():
         user_minutes=no_of_minutes(user_date)
         user_calendar=user_minutes.convert_minutes()
         print(user_calendar)
-        today=date.today()
+        today=()
+        today=date.today().day
+        today=date.today().month
+        today=date.today().year
         print(today)
         #print(date(today).isocalendar())
         # today_minutes=no_of_minutes(today)
