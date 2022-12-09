@@ -4,7 +4,7 @@ import inflect
 
 class no_of_minutes:
     def __init__(self , user_date):
-        year, month, day=user_date.split("-")
+        year, month, day=user_date.isocalendar()
         self.year=year
         self.month=month
         self.day=day
