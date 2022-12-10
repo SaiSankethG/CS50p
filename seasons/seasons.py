@@ -37,7 +37,7 @@ def main():
 
         #different in days , months, years
         diff_date=today_minutes-user_minutes
-        diff_minutes=diff_date.convert_minutes()
+        diff_calendar=diff_date.convert_minutes()
         #print(diff_date.convert_minutes())
         no_of_days=0
         start_year=user_calendar[0]
@@ -48,7 +48,8 @@ def main():
             else:
                 no_of_days=365
             start_year+=1
-        
+        no_of_days+=(diff_calendar[1]*7)+diff_calendar[2]
+        print(no_of_days)
 
 
     except ValueError:
