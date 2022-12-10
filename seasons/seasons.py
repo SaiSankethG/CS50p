@@ -37,8 +37,9 @@ def main():
 
         #different in days , months, years
         diff_date=today_minutes-user_minutes
+        diff_minutes=diff_date.convert_minutes()
         #print(diff_date.convert_minutes())
-        
+        yea
 
 
     except ValueError:
