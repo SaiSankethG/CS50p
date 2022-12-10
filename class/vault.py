@@ -3,8 +3,10 @@ class Vault:
         self.galleons=galleons
         self.sickles=sickles
         self.knuts=knuts
+        
     def __str__(self):
         return f"{self.galleons} Galleons, {self.sickles} sickles, {self.knuts} knuts"
+
     def __add__(self ,other):
         galleons=self.galleons+other.galleons
         sickles=self.sickles+other.sickles
