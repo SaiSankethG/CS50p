@@ -13,9 +13,9 @@ class no_of_minutes:
         return list(date(int(self.year) , int(self.month) , int(self.day)).isocalendar())
 
     def __sub__(self , other):
-        year=self.year-other.year
-        month=self.month-other.month
-        day=self.day-other.day
+        year=self.year-int(other.year)
+        month=self.month-int(other.month)
+        day=self.day-int(other.day)
         return no_of_minutes(year ,month, day)
 
 
@@ -37,7 +37,8 @@ def main():
 
         #different in days , months, years
         diff_date=today_minutes-user_minutes
-        print(diff_date)
+
+        print(diff_date.convert_minutes())
 
 
     except ValueError:
