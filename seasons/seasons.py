@@ -42,11 +42,12 @@ def main():
         no_of_days=0
         start_year=user_calendar[0]
         end_year=today_calendar[0]
-        while(start_year<end_year):
+        while(start_year<=end_year):
             if start_year%4==0 and (start_year%100!=0 or start_year%400!=0):
                 no_of_days+=366
             else:
                 no_of_days=365
+            start_year+=1
         
 
 
