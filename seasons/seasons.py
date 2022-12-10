@@ -23,7 +23,7 @@ def main():
         today.append(date.today().month)
         today.append(date.today().day)
         print(today)
-        print(date(int(date.today().year), int(date.today().month) , int(date.today().day)).isocalendar())
+        print(list(date(int(date.today().year), int(date.today().month) , int(date.today().day)).isocalendar()))
         #print(date(today).isocalendar())
         # today_minutes=no_of_minutes(today)
         # today_calendar=today_minutes.convert_minutes()
