@@ -39,7 +39,9 @@ def main():
         diff_date=today_minutes-user_minutes
         diff_minutes=diff_date.convert_minutes()
         #print(diff_date.convert_minutes())
-        yea
+        start_year=user_calendar[0]
+        end_year=today_calendar[0]
+        while()
 
 
     except ValueError:
