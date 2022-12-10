@@ -9,26 +9,25 @@ class no_of_minutes:
         self.month=month
         self.day=day
     def convert_minutes(self):
-        return list(date(int(year) , int(month) , int(day)).isocalendar())
+        return list(date(int(self.year) , int(self.month) , int(self.day)).isocalendar())
 
 
 def main():
     user_date=input("Date of Birth: ")
     try:
         date.fromisoformat(user_date)
-        year,month, day=user_minutes.split("-")
+        year,month, day=user_date.split("-")
+
         #passing the user input date
         user_minutes=no_of_minutes(year, month, day)
-        #user_calendar=user_minutes.convert_minutes()
+        user_calendar=user_minutes.convert_minutes()
         print(user_calendar)
-        #taking an empty list
+
+        #taking an empty list with present day
         today=[]
-        today=date(int(date.today().year), int(date.today().month) , int(date.today().day)).isocalendar()
-        print(today)
-        #print(date(today).isocalendar())
-        # today_minutes=no_of_minutes(today)
-        # today_calendar=today_minutes.convert_minutes()
-        # print(today_calendar)
+        today_minutes=no_of_minutes(int(date.today().year), int(date.today().month) , int(date.today().day))
+        today_calendar=today_minutes.convert_minutes()
+        print(today_calendar)
 
 
     except ValueError:
