@@ -23,8 +23,7 @@ def main():
         user_calendar=user_minutes.convert_minutes()
         print(user_calendar)
 
-        #taking an empty list with present day
-        today=[]
+        #passing the present day
         today_minutes=no_of_minutes(int(date.today().year), int(date.today().month) , int(date.today().day))
         today_calendar=today_minutes.convert_minutes()
         print(today_calendar)
