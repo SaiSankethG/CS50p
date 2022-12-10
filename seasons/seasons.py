@@ -8,7 +8,8 @@ class no_of_minutes:
         self.year=year
         self.month=month
         self.day=day
-    def __str__(self):
+
+    def convert_minutes(self):
         return list(date(int(self.year) , int(self.month) , int(self.day)).isocalendar())
 
     def __sub__(self , other):
@@ -26,13 +27,13 @@ def main():
 
         #passing the user input date
         user_minutes=no_of_minutes(year, month, day)
-        #user_calendar=user_minutes.convert_minutes()
-        print(user_minutes)
+        user_calendar=user_minutes.convert_minutes()
+        print(user_calendar)
 
         #passing the present day
         today_minutes=no_of_minutes(int(date.today().year), int(date.today().month) , int(date.today().day))
-        #today_calendar=today_minutes.convert_minutes()
-        print(today_minutes)
+        today_calendar=today_minutes.convert_minutes()
+        print(today_calendar)
 
         #different in days , months, years
         diff_date=today_minutes-user_minutes
