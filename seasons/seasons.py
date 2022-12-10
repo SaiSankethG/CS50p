@@ -47,6 +47,7 @@ def main():
                 no_of_days+=366
             else:
                 no_of_days=365
+        
 
 
     except ValueError:
