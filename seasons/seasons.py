@@ -3,10 +3,11 @@ import inflect
 
 
 class no_of_minutes:
-    def __init__(self , user_date):
-        self.userdate=user_date
+    def __init__(self , year , month , day):
+        self.year=year
+        self.month=month
+        self.day=day
     def convert_minutes(self):
-        year,month, day=self.userdate.split("-")
         return list(date(int(year) , int(month) , int(day)).isocalendar())
 
 
@@ -15,7 +16,8 @@ def main():
     user_date=input("Date of Birth: ")
     try:
         date.fromisoformat(user_date)
-        user_minutes=no_of_minutes(user_date)
+        year,month, day=user_minutes.split("-")
+        user_minutes=no_of_minutes(year, month, day)
         user_calendar=user_minutes.convert_minutes()
         print(user_calendar)
         today=[]
