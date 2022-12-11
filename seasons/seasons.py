@@ -42,9 +42,9 @@ def main():
         no_of_days=0
         start_year=user_calendar[0]
         end_year=today_calendar[0]
-        no_of_minutes=((diff_calendar[1]*7)+diff_calendar[2]+(diff_calendar[0]*365))*1440
-        
-        print(no_of_days)
+        no_of_minute=((diff_calendar[1]*7)+diff_calendar[2]+(diff_calendar[0]*365))*1440
+
+        print(no_of_minute)
 
 
     except ValueError:
