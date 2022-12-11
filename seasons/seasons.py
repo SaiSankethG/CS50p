@@ -23,8 +23,7 @@ def convert(user_date):
 
 
 def convert_minutes(minutes):
-    return 
-...
+    return (f"{p.number_to_word(minutes, andword="")} minutes")
 
 
 if __name__ == "__main__":
