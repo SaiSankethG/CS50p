@@ -7,8 +7,7 @@ p=inflect.engine()
 
 def main():
     user_date=input("Date of Birth:")
-    minutes=convert(user_date)
-    print(convert_minutes(minutes))
+    print(convert(user_date))
 
 def convert(user_date):
     try:
@@ -19,11 +18,7 @@ def convert(user_date):
     sub=today-b
     day=sub.days
     total_minutes=day*1440
-    return round(total_minutes)
-
-
-def convert_minutes(minutes):
-    return (f"{p.number_to_words(minutes, andword='')} minutes")
+    return (f"{p.number_to_words(total_minutes, andword='')} minutes")
 
 
 if __name__ == "__main__":
