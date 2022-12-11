@@ -23,31 +23,32 @@ def main():
     user_date=input("Date of Birth: ")
     try:
         date.fromisoformat(user_date)
-        year,month, day=user_date.split("-")
-
-        #passing the user input date
-        user_minutes=no_of_minutes(year, month, day)
-        user_calendar=user_minutes.convert_minutes()
-        print(user_calendar)
-
-        #passing the present day
-        today_minutes=no_of_minutes(int(date.today().year), int(date.today().month) , int(date.today().day))
-        today_calendar=today_minutes.convert_minutes()
-        print(today_calendar)
-
-        #different in days , months, years
-        diff_date=today_minutes-user_minutes
-        diff_calendar=diff_date.convert_minutes()
-        #print(diff_date.convert_minutes())
-        no_of_days=0
-        start_year=user_calendar[0]
-        end_year=today_calendar[0]
-        no_of_minute=((diff_calendar[1]*7)+diff_calendar[2]+(diff_calendar[0]*365))*1440
-
-        print(no_of_minute)
 
     except ValueError:
         print("Invalid date")
+
+    year,month, day=user_date.split("-")
+
+    #passing the user input date
+    user_minutes=no_of_minutes(year, month, day)
+    user_calendar=user_minutes.convert_minutes()
+    print(user_calendar)
+
+    #passing the present day
+    today_minutes=no_of_minutes(int(date.today().year), int(date.today().month) , int(date.today().day))
+    today_calendar=today_minutes.convert_minutes()
+    print(today_calendar)
+
+    #different in days , months, years
+    diff_date=today_minutes-user_minutes
+    diff_calendar=diff_date.convert_minutes()
+    #print(diff_date.convert_minutes())
+    no_of_days=0
+    start_year=user_calendar[0]
+    end_year=today_calendar[0]
+    no_of_minute=((diff_calendar[1]*7)+diff_calendar[2]+(diff_calendar[0]*365))*1440
+
+    print(no_of_minute)
 
 
 
