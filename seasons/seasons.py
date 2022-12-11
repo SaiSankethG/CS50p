@@ -8,7 +8,7 @@ p=inflect.engine()
 def main():
     user_date=input("Enter the date:")
     minutes=convert(user_date)
-    print(f"{p.number_to_words(minutes), andword=""} minutes")
+    print(f"{p.number_to_words(minutes , andword="")} minutes")
 
 def convert(user_date):
     try:
