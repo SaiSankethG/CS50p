@@ -6,7 +6,7 @@ p=inflect.engine()
 
 
 def main():
-    user_date=input("Enter the date:")
+    user_date=input("Date of Birth:")
     minutes=convert(user_date)
     print(convert_minutes(minutes))
 
