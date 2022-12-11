@@ -46,7 +46,6 @@ def main():
 
         print(no_of_minute)
 
-
     except ValueError:
         print("Invalid date")
 
