@@ -5,9 +5,10 @@ def main():
     test_check_minutes()
 
 def test_check_minutes():
-    assert convert("2003-09-01")=="ten million, one hundred thirty-nine thousand forty minutes"
+    assert convert("2003-09-01")=="ten million, one hundred forty thousand, four hundred eighty minutes"
     # with pytest.raise(ValueError):
     #     convert()
+    assert convert("")
 
 if __name__=="__main__":
     main()
