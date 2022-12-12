@@ -24,5 +24,5 @@ class Jar:
     def size(self):
         ...
 
-# jar=Jar()
-# print()
+jar=Jar()
+print(jar)
