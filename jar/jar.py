@@ -31,4 +31,5 @@ class Jar:
         return self.size
 
 jar=Jar()
-print(jar.size)
+jar.deposit(13)
+# print(jar)
