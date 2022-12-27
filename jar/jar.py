@@ -11,10 +11,14 @@ class Jar:
         return emoji.emojize(":cookie:")*self._capacity
 
     def deposit(self, n):
-        
+        self.capacity+=n
+        if self.capacity>12:
+            raise ValueError
 
     def withdraw(self, n):
-        ...
+        if self.capacity-=n<0:
+            
+
 
     @property
     def capacity(self):
