@@ -16,8 +16,9 @@ class Jar:
             raise ValueError
 
     def withdraw(self, n):
-        if self.capacity-=n<0:
-            
+        self.capacity-=n
+        if self.capacity<0:
+            raise ValueError
 
 
     @property
