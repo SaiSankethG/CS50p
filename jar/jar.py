@@ -3,7 +3,7 @@ import emoji
 class Jar:
     def __init__(self, capacity=12 , size=0):
         self._capacity=capacity
-        self.size=size
+        self._size=size
         if self._capacity<0:
             raise ValueError
 
