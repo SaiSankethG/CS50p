@@ -11,7 +11,7 @@ class Jar:
         return emoji.emojize(":cookie:")*self._capacity
 
     def deposit(self, n):
-        ...
+        
 
     def withdraw(self, n):
         ...
