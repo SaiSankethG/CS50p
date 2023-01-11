@@ -12,14 +12,16 @@ class Jar:
         return emoji.emojize(":cookie:")*self._size
 
     def deposit(self, n):
-        self._size+=n
-        if self._size>12:
+        if self._size+n>12:
             raise ValueError
+        if n>self._capacity:
+            raise ValueError
+        self._size+=n
 
     def withdraw(self, n):
+        if self._size-n<0:
+            raise ValueError("Less than Zero")
         self._size-=n
-        if self._size<0:
-            raise ValueError
 
 
     @property
@@ -31,5 +33,6 @@ class Jar:
         return self._size
 
 jar=Jar()
-jar.deposit(3)
+jar.deposit(2)
+jar.withdraw(1)
 print(jar)
