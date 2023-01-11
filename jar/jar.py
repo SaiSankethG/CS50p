@@ -9,7 +9,7 @@ class Jar:
 
 
     def __str__(self):
-        return emoji.emojize(":cookie:")*self._capacity
+        return emoji.emojize(":cookie:")*self._size
 
     def deposit(self, n):
         self._size+=n
@@ -31,5 +31,5 @@ class Jar:
         return self._size
 
 jar=Jar()
-jar.deposit(13)
-# print(jar)
+jar.deposit(3)
+print(jar)
