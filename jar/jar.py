@@ -26,6 +26,7 @@ class Jar:
 
     @property
     def capacity(self):
+        print(self._capacity)
         return self._capacity
 
     @property
@@ -36,4 +37,4 @@ jar=Jar()
 jar.deposit(2)
 jar.withdraw(1)
 # jar.capacity()
-print(jar.capacity())
+
