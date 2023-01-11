@@ -32,8 +32,8 @@ class Jar:
     def size(self):
         return self._size
 
-# jar=Jar()
-# jar.deposit(2)
-# jar.withdraw(1)
-# # jar.capacity()
-# print(jar.capacity())
+jar=Jar()
+jar.deposit(2)
+jar.withdraw(1)
+# jar.capacity()
+print(jar.capacity())
