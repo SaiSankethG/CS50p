@@ -7,7 +7,6 @@ class Jar:
         if self.capacity<0:
             raise ValueError
 
-
     def __str__(self):
         return emoji.emojize(":cookie:")*self._size
 
@@ -23,18 +22,18 @@ class Jar:
             raise ValueError("Less than Zero")
         self._size-=n
 
-
     @property
     def capacity(self):
-        print(self._capacity)
+        # print(self._capacity)
         return self._capacity
 
     @property
     def size(self):
         return self._size
 
+
 jar=Jar()
-# jar.deposit(2)
+jar.deposit(12)
 # jar.withdraw(1)
 # jar.capacity()
 print(jar)
