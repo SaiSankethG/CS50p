@@ -1,4 +1,4 @@
-from test_bank import value
+from bank import value
 
 def main():
     test_0
