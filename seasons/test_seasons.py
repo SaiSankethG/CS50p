@@ -1,4 +1,4 @@
-from seasons.seasons import convert
+from seasons import convert
 import pytest
 
 def main():
