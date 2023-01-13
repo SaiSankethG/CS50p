@@ -1,4 +1,4 @@
-from jar.jar import Jar
+from jar import Jar
 
 def test_init():
     jar=Jar()
