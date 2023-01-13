@@ -6,8 +6,8 @@ class PDF():
     def __init__(self, name):
         self._pdf=FPDF()
         self._pdf.add_page()
-        self._pdf.set_font("helvetica", size=20)
-        
+        self._pdf.set_font("helvetica", "B", 16)
+        self._pdf.cell()
 
     def save(self , name):
         self._pdf.output(name)
