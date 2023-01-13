@@ -18,7 +18,7 @@ def convert(user_date):
     sub=today-b
     day=sub.days
     total_minutes=day*1440
-    return (f"{p.number_to_words(total_minutes, andword='').capitalise()} minutes")
+    return (f"{p.number_to_words(total_minutes, andword='').capitalize()} minutes")
 
 
 if __name__ == "__main__":
