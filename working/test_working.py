@@ -1,4 +1,4 @@
-from working import convert
+from working.working import convert
 import pytest
 
 def main():
@@ -19,7 +19,8 @@ def test_valueerror():
         convert('13 PM to 17 PM')
 
 def test_invalid():
-    
+    with pytest.raises(ValueError):
+        convert('9 AM - 5 PM')
 
 
 if __name__=="__main__":
