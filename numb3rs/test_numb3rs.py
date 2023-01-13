@@ -1,4 +1,4 @@
-from numb3rs.numb3rs import validate
+from numb3rs import validate
 import sys
 
 def main():
