@@ -1,4 +1,4 @@
-from seasons.seasons import convert
+from seasons import convert
 
 def main():
     test_check_minutes()
