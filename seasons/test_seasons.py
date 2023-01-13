@@ -1,5 +1,4 @@
 from seasons import convert
-import pytest
 
 def main():
     test_check_minutes()
@@ -9,7 +8,7 @@ def test_check_minutes():
     # with pytest.raise(ValueError):
     #     convert()
     assert convert("2021-12-12")=="five hundred twenty-five thousand, six hundred minutes"
-    assert convert(")
+    # assert convert(")
 
 if __name__=="__main__":
     main()
