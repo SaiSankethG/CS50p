@@ -1,6 +1,6 @@
-def meow(n: int):
-    for _ in range(n):
-        print("Meow")
+def meow(n: int)->str:
+    return "meow\n"*n
 
 num: int=int(input("Number: "))
-meow(num)
+meows: str=meow(num)
+print(meows, end="")
