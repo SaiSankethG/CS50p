@@ -28,8 +28,12 @@ class account:
     def withdraw(self, n):
         self._bal-=n
 
-a=account()
-print("Balance:" a.balance)
+def main():
+    a=account()
+    print("Balance:", a.balance)
+    a.deposit(100)
+    a.withdraw(50)
+    print("Balance:", a.balance)
 
 if __name__=="__main__":
     main()
