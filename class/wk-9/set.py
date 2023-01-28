@@ -8,8 +8,8 @@ students=[
 
 houses=[]
 for student in students:
-    if students["house"] not in houses:
-        houses.append(students["house"])
+    if student["house"] not in houses:
+        houses.append(student["house"])
 
 for house in houses:
     print(house)
