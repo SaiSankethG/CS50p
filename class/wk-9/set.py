@@ -1,5 +1,5 @@
 students=[
-    {name="Harry", house="Gryffindor"},
+    {name:"Harry", house="Gryffindor"},
     {name="Heromine", house="Gryffindor"},
     {name="Ron", house="Gryffindor"},
     {name="Draco", house="Slytherin"},
@@ -8,4 +8,8 @@ students=[
 
 houses=[]
 for student in students:
-    if 
+    if students["house"] not in houses:
+        houses.append(students["house"])
+
+for house in houses:
+    print(house)
